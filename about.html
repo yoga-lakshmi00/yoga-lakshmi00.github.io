@@ -6,56 +6,132 @@
     <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
-<body class="font-serif">
-    <div class="container mx-auto max-w-[1400px]">
-        <div class="flex  md:flex justify-between mt-3 text-xl font-bold font-serif">
-            <p class="pt-8 text-[#445a5d] ">MURUGANANTHAM P <br> <span class="text-black">+91 9444253030</span></p>
-            <div class="flex items-center space-x-4">
-                <p class="uppercase text-2xl">Lawyer</p>
-                <img src="img/logo.jpg" class="w-36 h-36 items-center inline-block" alt="">
-                <p class="uppercase text-2xl">justice</p>
+<body >
+    <div class="sticky top-0 z-40 bg-white">
+
+
+        <div class="container mx-auto max-w-[1400px] py-4 lg:py-8 relative px-6">
+            <div class="flex flex-col md:flex-row justify-between text-xl relative font-bold font-serif">
+
+                <div class="flex flex-col lg:flex-row justify-between w-full">
+                    <p class="text-[#445a5d]">MURUGANANTHAM P <br> <span class="text-black">+91 9444253030</span></p>
+
+                    <div class="hidden lg:flex items-center space-x-4">
+                        <p class="uppercase text-2xl">Lawyer</p>
+                        <img src="img/logo.jpg" class="w-10 h-10 lg:w-28 lg:h-28 object-cover items-center inline-block"
+                            alt="">
+                        <p class="uppercase text-2xl">justice</p>
+                    </div>
+
+                    <p class="text-[#445a5d]">Office Hours: Opens 24 hours <br> <span
+                    class="text-black">advmuru900@gmail.com</span></p>
+
+                    <div class="flex lg:hidden absolute top-[5%] right-2" onclick="navToggle()">
+                        <i class="open fa fa-bars cursor-pointer" aria-hidden="true"></i>
+                        <p class="close hidden font-bold cursor-pointer">x</p>
+                    </div>
+
+                    <div class= "bg-[#567470] ">
+                        <div class="menu hidden py-3 flex lg:hidden flex-col gap-3 ">
+                            <div>
+                                <p class="text-base">Home</p>
+                            </div>
+                            <div>
+                                <a href="about.html"><p class="text-base">About US</p></a>
+                            </div>
+                            <div>
+                                <p class="text-base">Practice Area</p>
+                            </div>
+                            <div>
+                                <p class="text-base">FAQ</p>
+                            </div>
+                            <div>
+                                <p class="text-base">FREE CONSULTATION</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
             </div>
-            <p class="pt-8 text-[#445a5d]">Office Hours: Opens 24 hours <br> <span class="text-black">advmuru900@gmail.com</span></p>
+
+
+            <div class="hidden lg:flex absolute -bottom-[15%] z-50 w-full flex items-center justify-center">
+                <div class="fixed top-4 flex items-center justify-center lg:w-[90%] xl:w-[100%] bg-[#567470] sticky">
+                    <div class="flex lg:gap-2 xl:gap-5 items-center text-xl font-serif font-bold py-3">
+                        <a href="index.html">
+                            <p
+                                class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                                Home
+                            </p>
+                        </a>
+                        <a href="about.html">
+                            <p
+                                class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                                About Us
+                            </p>
+                        </a>
+                        <p
+                            class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                            Practice Area
+                        </p>
+                        <p
+                            class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                            FAQ
+                        </p>
+                        <p
+                            class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                            Contact
+                        </p>
+                        <p class="rounded-sm p-4 py-1  bg-[#F3EEED] text-black  cursor-pointer">
+                            FREE CONSULTATION
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
     </div>
-    <div class="bg-[#567470] container mx-auto max-w-[1300px] ">
-        <div class="  flex justify-center  h-16 mt-4  ">
-            <!-- <img src="https://img.freepik.com/premium-vector/blue-orange-symbol-law-united-states-attorney-judicial-logo-design_779965-50.jpg" class="w-44 h-16 items-center inline-block" alt=""> -->
-            <div class="flex space-x-10  list-none items-center text-xl font-serif font-bold mt-6 " >
-                <p class="hover:rounded-sm  p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                    Home
-                </p>
-                <a href="About.html"> <p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer" >
-                    About Us
-                </p></a>
-                <p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                    Practice Area
-                </p>
-                <p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                    FAQ 
-                </p>
-                <p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                    Contact
-                </p>
-                <p class="rounded-sm p-4 py-1  bg-[#F3EEED] text-black  cursor-pointer">
-                    FREE CONSULTATION
-                </p>
-            </div>
-        </div>
 
-    </div>
-<div class="relative">
+
+    <script>
+
+        function navToggle(){
+            let open = document.querySelector(".open");
+            let close = document.querySelector(".close");
+            let menu = document.querySelector(".menu");
+            
+            menu.classList.toggle("hidden");
+            open.classList.toggle("hidden");
+            close.classList.toggle("hidden");
+        }
+       
+
+    </script>
+<div class="relative h-[100vh]">
   <img
     src="img/businessman-reading-contract-closeup.jpg"
-    class="w-full h-screen"
+    class="w-full h-[100vh] object-cover"
     alt="Louvre" />
-    <div class ="absolute top-0 bg-black w-full h-screen opacity-50"></div>
-    <div class="absolute inset-x-0 flex justify-center items-center w-full top-0 bg-[#567470] container mx-auto max-w-[1300px] h-5 "></div>
+    <div class ="absolute top-0 bg-black w-full h-[100vh] opacity-50"></div>
+    <!-- <div class="absolute inset-x-0 flex justify-center items-center w-full top-0 bg-[#567470] container mx-auto max-w-[1300px] h-5 "></div> -->
 
-    <div class="absolute bottom-0 w-full h-full "></div>
+    <div class="absolute bottom-0  "></div>
     <div class="absolute top-1/2 transform -translate-y-1/2 text-white text-center w-full  ">
         <!-- <p class="text-4xl">About </p> -->
         <p class="text-5xl font-bold">Empowering voices, fostering change. We are dedicated advocates committed to <br> creating a world where every voice is heard and every cause championed.</p>
@@ -69,7 +145,7 @@
 </div>
 
 
-<div class="container mx-auto max-w-[1200px] flex space-x-5 mt-10 relative ">
+<div class="container mx-auto max-w-[1300px] flex space-x-5 mt-5 relative ">
     <div class="">
         <img src="img/still-life-with-scales-justice(3).jpg" class="rounded-md" style="height: 500px; width: 600px;" alt="">
         
@@ -84,12 +160,12 @@
     </div>
 </div>
 
-<div class="container mx-auto max-w-[1200px] mt-8 relative ">
+<div class="container mx-auto max-w-[1300px] mt-8 relative ">
      <img src="img/man-office-writing-paper.jpg" class="flex justify-center relative rounded-lg" style="height: 500px; width: 1200px;" alt="">
      <div class="absolute top-0 bg-black opacity-50" style="height: 500px; width: 1200px;"></div>
      <div class="absolute  inset-0 flex justify-center mt-10 " style="height: 500px; width: 1200px;">
-        <div class="rounded- p-8 bg-gray-800 opacity-70 relative " style="height: 400px; width: 500px;"></div>
-        <div class="text-white absolute top-4">
+        <div class="rounded- p-8 bg-gray-800 opacity-70 relative max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl " style="height: 400px; width: 500px;"></div>
+        <div class="text-white absolute top-4 ">
             <p class=" text-4xl text-white  ">Get An Appointment</p>
             <div class="flex flex-col space-y-4 pt-6">
                 <input class="p-2 rounded-md text-black" type="text" name="name" id="" placeholder="Your Name">
@@ -106,13 +182,13 @@
      </div>
 </div>
 
-<div class="container mx-auto max-w-[1200px] flex space-x-5 mt-10 relative ">
+<div class="container mx-auto max-w-[1300px] flex space-x-5 mt-10 relative ">
     <div class="">
         <img src="img/still-life-with-scales-justice(6).jpg" class="rounded-md" style="height: 500px; width: 600px;" alt="">
         
     </div>
    
-    <div class="absolute top-3 right-2 rounded-md bg-white text-black  p-4 px-20 mt-5" style="height: 450px;  width: 700px;">
+    <div class="absolute top-3  sm:right-0 rounded-md bg-white text-black p-4 mt-5 max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl" style="height: 450px; width: 500%;">        
         <p class="text-lg">Our Features <br>
             <span class="text-4xl ">Why Choose Us</span> </p>
         <div class="flex space-x-5 mt-5">
@@ -153,9 +229,9 @@
 </div>
 
 
-<div class="mt-8 ">
-    <div class="w-full bg-[#567470]  pt-5 pb-8 text-xl font-serif text-white font-bold  ">
-        <div class=" container mx-auto max-w-[1300px] flex justify-between ">
+<div class="mt-8">
+    <div class="w-full bg-[#567470]  pt-5 pb-8 text-xl font-serif text-white font-bold">
+        <div class="container mx-auto max-w-[1300px] flex flex-col lg:flex-row justify-between px-6">
             <div class="text-center">
                 <p>Visit Our Office</p>
                 <p>________</p>
@@ -171,7 +247,7 @@
                 <p>________</p>
                 <p class="pt-4">Monday-Sunday: Open 24 Hrs</p>
             </div>
-            
+
 
         </div>
     </div>
@@ -180,14 +256,19 @@
 <div>
     <iframe class="w-full  " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.136614377046!2d78.691648!3d10.8086961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf51de625e949%3A0x5489f3a1f6cdebd3!2sadvocate%20muruganantham!5e0!3m2!1sen!2sin!4v1707054630779!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
  </div>
- <div class=" container mx-auto flex justify-center max-w-[1300px] space-x-6 pt-5 pb-5 ">
-   <i class="fa fa-facebook rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5 " aria-hidden="true"></i>
-   <i class="fa fa-instagram rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5" aria-hidden="true"></i>
-   <i class="fa fa-twitter rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5" aria-hidden="true"></i>
-   <i class="fa fa-google rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5" aria-hidden="true"></i>
-   <i class="fa fa-linkedin rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5" aria-hidden="true"></i>
+ <div class="container mx-auto flex justify-center max-w-[1300px] gap-3 py-6">
+    <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fa fa-facebook rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5 "
+        aria-hidden="true"></i>
+    <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fa fa-instagram rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+        aria-hidden="true"></i>
+    <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fa fa-twitter rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+        aria-hidden="true"></i>
+    <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fa fa-google rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+        aria-hidden="true"></i>
+    <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fa fa-linkedin rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+        aria-hidden="true"></i>
 
- </div>
+</div>
 
    
 </body>
