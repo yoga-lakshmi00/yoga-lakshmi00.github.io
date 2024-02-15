@@ -7,6 +7,9 @@
     <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/js/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/css/index.min.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +34,7 @@
         <div class="container mx-auto max-w-[1400px] py-4 lg:py-8 relative px-6">
             <div class="flex flex-col md:flex-row justify-between text-xl relative font-bold font-serif">
 
-                <div class="flex flex-col lg:flex-row justify-between w-full">
+                <div class="flex flex-col lg:flex-row justify-between lg:items-center w-full">
                     <p class="text-[#445a5d]">MURUGANANTHAM P <br> <span class="text-black">+91 9444253030</span></p>
 
                     <div class="hidden lg:flex items-center space-x-4">
@@ -49,21 +52,15 @@
                         <p class="close hidden font-bold">x</p>
                     </div>
 
-                    <div class="menu hidden py-3 flex lg:hidden flex-col gap-3 ">
+                    <div class="menu hidden py-3 flex lg:hidden flex-col gap-3">
                         <div>
                             <p class="text-base">Home</p>
                         </div>
                         <div>
-                            <a href="about.html"><p class="text-base">About US</p></a>
+                            <a href="about.html"><p class="text-base">About Us</p></a>
                         </div>
                         <div>
-                            <p class="text-base">Practice Area</p>
-                        </div>
-                        <div>
-                            <p class="text-base">FAQ</p>
-                        </div>
-                        <div>
-                            <p class="text-base">FREE CONSULTATION</p>
+                            <p class="text-base">Contact Us</p>
                         </div>
                     </div>
                 </div>
@@ -125,31 +122,164 @@
        
 
     </script>
+   
+<div
+  id="carouselExampleCaptions"
+  class="relative"
+  data-te-carousel-init
+  data-te-ride="carousel">
+  <div
+    class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+    data-te-carousel-indicators>
+    <button
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide-to="0"
+      data-te-carousel-active
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-current="true"
+      aria-label="Slide 1"></button>
+    <button
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide-to="1"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-label="Slide 2"></button>
+    <button
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide-to="2"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-label="Slide 3"></button>
+  </div>
+
+  <div
+    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+    <div
+      class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-active
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <img
+        src="img/home.jpg"
+        class="block w-full lg:h-[80vh]"
+        alt="..." />
+      <div
+        class="absolute top-0 bottom-0 left-0 right-0 w-full container mx-auto max-w-[1350px] flex items-center">
+        
+        <p class="p-2">
+            <span class="font-bold text-sm md:text-4xl xl:text-5xl ">Elevating Voices, Igniting Change: <br>Advocating for a
+                Better
+                World</span><br>
+            <span class="text-base lg:text-2xl xl:text-3xl pt-3"> Join us in the pursuit of justice, equality, and impactful advocacy. <br>
+                Together, we make a difference</span>
+        </p>
+      </div>
+    </div>
+    
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <img
+        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
+        class="block w-full"
+        alt="..." />
+      <div
+        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+        <h5 class="text-xl">Second slide label</h5>
+        <p>
+          Some representative placeholder content for the second slide.
+        </p>
+      </div>
+    </div>
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <img
+        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
+        class="block w-full"
+        alt="..." />
+      <div
+        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+        <h5 class="text-xl">Third slide label</h5>
+        <p>
+          Some representative placeholder content for the third slide.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <button
+    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselExampleCaptions"
+    data-te-slide="prev">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Previous</span
+    >
+  </button>
+  <button
+    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselExampleCaptions"
+    data-te-slide="next">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Next</span
+    >
+  </button>
+</div>
+
+<script>
+import {
+  Carousel,
+  initTE,
+} from "tw-elements";
+
+initTE({ Carousel });
+</script>
 
 
 
 
 
-    <!-- [204px] -->
 
 
-    <div class="relative h-[70vh">
-
-        <img src="img/home.jpg" class="w-full h-[70vh] object-cover" alt="">
-
+   <div class="lg:ml-12">
+    <div class="container mx-auto max-w-[1400px]">
         <div
-            class="absolute top-0 bottom-0 left-0 right-0 w-full container mx-auto max-w-[1400px] flex items-center justify-center">
-            <div class="flex flex-col gap-[.5px] px-6">
-                <span class="font-bold text-2xl lg:text-4xl xl:text-6xl">Elevating Voices, Igniting Change: <br>Advocating for a
-                    Better
-                    World</span><br>
-                <span class="text-base lg:text-2xl xl:text-4xl"> Join us in the pursuit of justice, equality, and impactful advocacy. <br>
-                    Together, we make a difference</span>
-            </div>
-        </div>
-
-        <div
-            class="hidden absolute -bottom-44 left-0 right-0 p-4 text-black font-bold font-serif container mx-auto max-w-[1300px] lg:flex flex-col lg:flex-row justify-center ">
+            class="text-black font-bold font-serif w-full items-center lg:flex flex-col lg:flex-row justify-center bg-[#567470]">
             <div
                 class="border py-20 px-16 bg-white text-center text-xl transition duration-300 ease-in-out hover:scale-110 ">
                 <i class="fa fa-home border rounded-full text-black p-8  bg-gray-100 inline-block  "
@@ -159,7 +289,6 @@
                     <p>Years Of Experienced</p>
                 </div>
             </div>
-
             <div
                 class="border py-20 px-16 bg-gray-100 text-center text-xl transition duration-300 ease-in-out hover:scale-110">
                 <i class="fa fa-handshake-o border rounded-full text-black p-8  bg-white inline-block"
@@ -187,49 +316,39 @@
                 </div>
             </div>
         </div>
-
     </div>
-
-
-    <div
-        class="p-4 text-black font-bold font-serif container mx-auto max-w-[1300px] flex flex-col lg:hidden gap-5 justify-center">
-        <div
-            class="border py-20 px-16 bg-white text-center text-xl transition duration-300 ease-in-out hover:scale-110 ">
-            <i class="fa fa-home border rounded-full text-black p-8  bg-gray-100 inline-block  " aria-hidden="true"></i>
-            <div class="pt-6 text-[#445a5d]">
-                <p class="mb-2">10+</p>
-                <p>Years Of Experienced</p>
-            </div>
-        </div>
-
-        <div
-            class="border py-20 px-16 bg-gray-100 text-center text-xl transition duration-300 ease-in-out hover:scale-110">
-            <i class="fa fa-handshake-o border rounded-full text-black p-8  bg-white inline-block"
-                aria-hidden="true"></i>
-            <div class="pt-6 text-[#445a5d]">
-                <p class="mb-2">500+</p>
-                <p>Trusted Clients</p>
-            </div>
-        </div>
-        <div
-            class="border py-20 px-16 bg-white text-center text-xl transition duration-300 ease-in-out hover:scale-110">
-            <i class="fa fa-users border rounded-full text-black p-8  bg-gray-100 inline-block " aria-hidden="true"></i>
-            <div class="pt-6 text-[#445a5d]">
-                <p class="mb-2">20+</p>
-                <p>Qualified Lawyers</p>
-            </div>
-        </div>
-        <div
-            class="border py-20 px-16 bg-gray-100 text-center text-xl transition duration-300 ease-in-out hover:scale-110">
-            <i class="fa fa-gift border rounded-full text-black p-8  bg-white inline-block" aria-hidden="true"></i>
-            <div class="pt-6 text-[#445a5d]">
-                <p class="mb-2">100+</p>
-                <p>Honor's & Awards</p>
-            </div>
-        </div>
+   </div>
+   
+   <div class="container mx-auto max-w-[1350px] flex flex flex-col md:flex-row space-x-5 mt-5 relative ">
+    <div class="">
+        <img src="img/anna-transformed.jpeg" class="rounded-md" style="height: 500px; width: 900px;" alt="">
+        
     </div>
+    <div class="bg-[#567470] md:hidden text-white text-2xl " style=" width: 900px;">
+        <p class="border p-4 ">10+  Years Experience</p>
+    </div>
+    <div class="md:pt-36 pt-5">
+        <p class="text-2xl font-bold  "> Learn About Us <br>
+        <span class=" text-6xl font-bold"> We Provide Reliable And <br> Effective Legal Services</p></span>
+        <p class="pt-4 text-xl">Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor <br> lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
+    </div>
+   
+    <div class="md:absolute top-6 lg:left-80 left-0  bg-[#567470] text-white text-2xl">
+        <p class="border p-4 px-24 ">10+  Years Experience</p>
+    </div>
+   
+</div>
 
-    <div class="container mx-auto max-w-[1300px] pt-6 lg:pt-48 px-6">
+            
+
+
+
+
+
+
+
+
+    <div class="container mx-auto max-w-[1300px] pt-6 lg:pt-10 px-6">
         <div class="flex flex-col lg:flex-row text-xl gap-5 font-serif inline-block">
             <div class="py-10 relative">
                 <div class="flex space-x-5 pb-5 ">
