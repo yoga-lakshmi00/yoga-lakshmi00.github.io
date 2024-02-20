@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/js/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/css/index.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/js/index.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sticky top-0 z-40 bg-white">
+
+
+        <div class="container mx-auto max-w-[1400px] py-4 lg:py-8 relative px-6">
+            <div class="flex flex-col md:flex-row justify-between text-xl relative font-bold font-serif">
+
+                <div class="flex flex-col lg:flex-row justify-between w-full">
+                    <p class="text-[#445a5d]">MURUGANANTHAM P <br> <span class="text-black">+91 9444253030</span></p>
+
+                    <div class="hidden lg:flex items-center space-x-4">
+                        <p class="uppercase text-2xl">Lawyer</p>
+                        <img src="img/logo.jpg" class="w-10 h-10 lg:w-28 lg:h-28 object-cover items-center inline-block"
+                            alt="">
+                        <p class="uppercase text-2xl">justice</p>
+                    </div>
+
+                    <p class="text-[#445a5d]">Office Hours: Opens 24 hours <br> <span
+                    class="text-black">advmuru900@gmail.com</span></p>
+
+                    <div class="flex lg:hidden absolute top-[5%] right-2 cursor-pointer" onclick="navToggle()">
+                        <i class="open fa fa-bars" aria-hidden="true"></i>
+                        <p class="close hidden font-bold ">x</p>
+                    </div>
+
+                    <div class="menu hidden py-3 flex lg:hidden flex-col gap-3 ">
+                        <div>
+                            <a href="index.html"><p class="text-base">Home</p></a>
+                        </div>
+                        <div>
+                            <a href="about.html"><p class="text-base">About US</p></a>
+                        </div>
+                        <div>
+                            <a href="Practice.html"><p class="text-base">Practice Area</p></a>
+                        </div>
+                        <div>
+                          <a href="faq.html"> <p class="text-base">FAQ</p></a>
+                        </div>
+                        <div>
+                            <a href="contactus.html"><p class="text-base">FREE CONSULTATION</p></a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+
+            <div class="hidden lg:flex absolute -bottom-[15%] z-50 w-full flex items-center justify-center">
+                <div class="fixed top-4 flex items-center justify-center lg:w-[90%] xl:w-[100%] bg-[#567470] sticky">
+                    <div class="flex lg:gap-2 xl:gap-5 items-center text-xl font-serif font-bold py-3">
+                        <a href="index.html">
+                            <p
+                                class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                                Home
+                            </p>
+                        </a>
+                        <a href="about.html">
+                            <p
+                                class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                                About Us
+                            </p>
+                        </a>
+                        <a href="practice.html"><p
+                            class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                            Practice Area
+                        </p></a>
+                        <a href="faq.html"> <p
+                            class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                            FAQ
+                        </p></a>
+                        <!-- <p
+                            class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                            Contact
+                        </p> -->
+                        <a href="contactus.html"><p class="rounded-sm p-4 py-1  bg-[#F3EEED] text-black  cursor-pointer">
+                            FREE CONSULTATION
+                        </p></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function navToggle(){
+            let open = document.querySelector(".open");
+            let close = document.querySelector(".close");
+            let menu = document.querySelector(".menu");
+            
+            menu.classList.toggle("hidden");
+            open.classList.toggle("hidden");
+            close.classList.toggle("hidden");
+        }
+       
+
+    </script>
+
+
+    <div class="relative">
+    <img
+      src="img/2151202353.jpg"
+      class="block w-full  lg:h-[82vh] object-cover"
+      alt="..." />
+    </div>
+
+
+    <div class="w-full absolute top-0 bottom-0 left-0 right-0 flex items-center container mx-auto max-w-[1350px]">
+   <div class="w-full ">
+    <button class="accordion p-3 w-full cursor-pointer text-left ">Is it possible for Advocate Adv. Muruganantham to represent me in courts?</button>
+<div class="panel ">
+  <p class="py-10 bg-[#567470]">Advocate Adv. Muruganantham is capable of representing you in court and is trained to present your case in the most effective way possible.</p>
+</div>
+
+<button class="accordion p-3 w-full cursor-pointer text-left">What is the cost of hiring advocate Adv. Muruganantham?</button>
+<div class="panel">
+<p class="py-10 bg-[#567470]">The cost of hiring Advocate Adv. Muruganantham can vary depending on several factors, such as stage and the complexity of the case, and the location. It is best to consult with the advocate directly to get an estimate of their fees and any additional costs associated with their services.</p></div>
+
+<button class="accordion p-3 w-full cursor-pointer text-left">What is the best way to communicate with an advocate?</button>
+<div class="panel">
+<p class="py-10 bg-[#567470]">The best way to communicate with an advocate can depend on the advocate's preferred method of communication and your own preferences. Generally, you can contact an advocate through email, phone, or in-person meetings. It's important to establish clear communication channels and expectations with your advocate to ensure effective communication throughout your case.</p></div>
+
+<button class="accordion p-3 w-full cursor-pointer text-left">How to talk about experience of lawyer and the cases that he has handled.?</button>
+<div class="panel">
+<p class="py-10 bg-[#567470]">
+
+    Ask the lawyer directly: You can always ask the lawyer directly about their experience and qualifications. Most lawyers are happy to provide this information to potential clients. Be respectful: When talking to a lawyer about their experience, be respectful and professional. Don't make assumptions or judgments based on limited information.
+    </p></div>
+<button class="accordion p-3 w-full cursor-pointer text-left">What is the best way to inquire with a lawyer about their experience in handling cases similar to mine, or how many cases they have handled?</button>
+<div class="panel">
+<p class="py-10 bg-[#567470]">Be specific: Be clear about the type of case you have and the specific issues involved. This will help the lawyer understand what you are looking for and provide a more meaningful response. Ask open-ended questions: Instead of asking a lawyer a yes-or-no question, ask an open-ended question that allows them to provide more detail. For example, instead of asking "Have you handled cases like mine before?" ask "Can you tell me about your experience handling cases like mine?"</p></div>
+<button class="accordion p-3 w-full cursor-pointer text-left">What should be considered when choosing between paying a lawyer in installments or a lump sum?</button>
+<div class="panel">
+<p class="py-10 bg-[#567470]">Whether you should pay upfront to a lawyer or in installments will depend on the agreement you have with your lawyer.Some lawyers charge an hourly rate, while others charge a flat fee or contingency fee. Depending on the fee structure, you may be required to pay a retainer or upfront fee before the lawyer begins working on your case</p></div>
+ 
+</div>
+
+
+
+    </div>
+
+
+
+<style>
+    .accordion {
+      background-color: #eee;
+     
+      cursor: pointer;
+      /* padding: 18px; */
+      /* width: 100%; */
+      /* border: none; */
+      /* text-align: left; */
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    
+    
+    .panel {
+      
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+    </style>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            // Close all other panels
+            for (var j = 0; j < acc.length; j++) {
+                if (acc[j] !== this) {
+                    acc[j].classList.remove("active");
+                    var otherPanel = acc[j].nextElementSibling;
+                    otherPanel.style.display = "none";
+                }
+            }
+
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
