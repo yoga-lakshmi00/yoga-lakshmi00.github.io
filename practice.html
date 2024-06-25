@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>advmuruganantham_aboutus</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/js/index.min.js"></script>
@@ -13,109 +13,126 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <style>
-        * {
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-    </style>
+        <style>
+            * .ibm-plex-sans-thin {
+           font-family: "IBM Plex Sans", sans-serif;
+           font-weight: 100;
+           font-style: normal;
+           }
+           .ibm-plex-serif-thin {
+           font-family: "IBM Plex Serif", serif;
+           font-weight: 100;
+           font-style: normal;
+           }
+           .ibm-plex {
+           font-family: "IBM Plex Serif", serif;
+           
+           }
+           
+           b { 
+               animation: animate  
+                   2s linear infinite; 
+           } 
+      
+   
+     
+           @keyframes animate { 
+               0% { 
+                   opacity: 0; 
+               } 
+     
+               50% { 
+                   opacity: 0.7; 
+               } 
+     
+               100% { 
+                   opacity: 0; 
+               } 
+           } 
+       </style>
 </head>
 
-<body>
+<body class="overflow-x-hidden ibm-plex-serif-thin">
 
-    <div class="sticky top-0 z-40 bg-white">
-
-
-        <div class="container mx-auto max-w-[1400px] py-4 lg:py-8 relative px-6">
-            <div class="flex flex-col md:flex-row justify-between text-xl relative font-bold font-serif">
-
-                <div class="flex flex-col lg:flex-row justify-between md:items-center w-full">
-                    <p class="text-[#445a5d]">MURUGANANTHAM P <br> <span class="text-black">+91 9444253030</span></p>
-
-                    <div class="hidden lg:flex items-center space-x-4">
-                        <p class="uppercase text-2xl">Lawyer</p>
-                        <img src="img/logo.jpg" class="w-10 h-10 lg:w-28 lg:h-28 object-cover items-center inline-block"
-                            alt="">
-                        <p class="uppercase text-2xl">justice</p>
-                    </div>
-
-                    <p class="text-[#445a5d]">Office Hours: Opens 24 hours <br> <span
-                    class="text-black">advmuru900@gmail.com</span></p>
-
-                    <div class="flex lg:hidden absolute top-[5%] right-2 cursor-pointer" onclick="navToggle()">
-                        <i class="open fa fa-bars" aria-hidden="true"></i>
-                        <p class="close hidden font-bold ">x</p>
-                    </div>
-
-                    <div class="menu hidden py-3 flex lg:hidden flex-col gap-3 ">
-                        <div>
-                            <a href="index.html"><p class="text-base">Home</p></a>
+    <div class="">
+        <div class="sticky top-0 z-40 bg-white">
+            <div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] py-4 lg:py-8 relative ">
+                <div class="flex flex-col md:flex-row justify-between text-lg relative font-bold font-serif">
+        
+                    <div class="flex flex-col lg:flex-row justify-between px-3 w-full pb-3">
+                        <p class="text-[#445a5d]">MURUGANANTHAM P <br> <span class="text-black">+91 9444253030</span></p>
+        
+                        <div class="hidden lg:flex items-center space-x-4">
+                            <p class="uppercase text-xl">Lawyer</p>
+                            <img src="img/logo.jpg" class="w-10 h-10 lg:w-28 lg:h-28 object-cover items-center inline-block" alt="">
+                            <p class="uppercase text-2xl">justice</p>
                         </div>
-                        <div>
-                            <a href="about.html"><p class="text-base">About US</p></a>
+        
+                        <p class="text-[#445a5d]">Office Hours: Opens 24 hours <br> <span class="text-black">advmuru900@gmail.com</span></p>
+        
+                        <div class="flex lg:hidden absolute top-[5%] right-2 cursor-pointer" onclick="navToggle()">
+                            <i class="open fa fa-bars" aria-hidden="true"></i>
+                            <p class="close hidden font-bold ">x</p>
                         </div>
-                        <div>
-                            <a href="practice.html"><p class="text-base">Practice Area</p></a>
-                        </div>
-                        <div>
-                          <a href="faq.html"> <p class="text-base">FAQ</p></a>
-                        </div>
-                        <div>
-                            <a href="contactus.html"><p class="text-base">FREE CONSULTATION</p></a>
+        
+                        <div class="menu hidden py-3 flex lg:hidden flex-col gap-3">
+                            <div>
+                                <a href="index.html"><p class="text-base">Home</p></a>
+                            </div>
+                            <div>
+                                <a href="about.html"><p class="text-base">About US</p></a>
+                            </div>
+                            <div>
+                                <a href="practice.html"><p class="text-base">Practice Area</p></a>
+                            </div>
+                            <div>
+                                <a href="faq.html"> <p class="text-base">FAQ</p></a>
+                            </div>
+                            <div>
+                                <a href="contactus.html"><p class="text-base">FREE CONSULTATION</p></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-               
-            </div>
-
-
-            <div class="hidden lg:flex absolute -bottom-[15%] z-50 w-full flex items-center justify-center">
-                <div class="fixed top-4 flex items-center justify-center lg:w-[90%] xl:w-[100%] bg-[#567470] sticky">
-                    <div class="flex lg:gap-2 xl:gap-5 items-center text-xl font-serif font-bold py-3">
-                        <a href="index.html">
-                            <p
-                                class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                                Home
-                            </p>
-                        </a>
-                        <a href="about.html">
-                            <p
-                                class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                                About Us
-                            </p>
-                        </a>
-                        <a href="practice.html"><p
-                            class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                            Practice Area
-                        </p></a>
-                        <a href="faq.html"> <p
-                            class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                            FAQ
-                        </p></a>
-                        <!-- <p
-                            class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                            Contact
-                        </p> -->
-                        <a href="contactus.html"><p class="rounded-sm p-4 py-1  bg-[#F3EEED] text-black  cursor-pointer">
-                            FREE CONSULTATION
-                        </p></a>
+        
+                <div class="hidden lg:flex absolute -bottom-[15%] z-50 w-full flex items-center justify-center">
+                    <div class="fixed top-4 flex items-center justify-center w-full bg-[#567470] sticky">
+                        <div class="flex lg:gap-2 xl:gap-5 items-center text-lg font-serif font-bold py-3 ">
+                            <a href="index.html">
+                                <p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                                    Home
+                                </p>
+                            </a>
+                            <a href="about.html">
+                                <p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                                    About Us
+                                </p>
+                            </a>
+                            <a href="practice.html"><p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                                Practice Area
+                            </p></a>
+                            <a href="faq.html"> <p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                                FAQ
+                            </p></a>
+                            <a href="contactus.html"><p class="rounded-sm p-4 py-1  bg-[#F3EEED] text-black  cursor-pointer">
+                                FREE CONSULTATION
+                            </p></a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
-
     </div>
-
-
+    
     <script>
-
         function navToggle(){
             let open = document.querySelector(".open");
             let close = document.querySelector(".close");
@@ -125,24 +142,20 @@
             open.classList.toggle("hidden");
             close.classList.toggle("hidden");
         }
-       
-
     </script>
-<div>
-    <div class="relative">
-    <img
-      src="img/courtadvmuru.jpg"
-      class="block w-full lg:h-[78vh] object-cover"
-      alt="..." />
-    <div
-      class="absolute top-0 bottom-0 left-0 right-0  w-full container mx-auto max-w-[1350px] flex items-center px-2">
-        <p class="text-black  text-md md:text-2xl md:leading-8 text-gradient-to-r from-indigo-500"> <span class="font-semibold text-xl md:text-6xl">Our dedicated team of <span class="text-white">experienced</span> advocates specializes</span> <br>
-in a wide range of practice areas,including family law, <span class="text-white">criminal defense, personal injury, and</span> immigration,providing comprehensive legal expertise to guide <span class="text-white">you through your unique legal challenges.</span></p>
-    </div>
-  </div>
-</div>
+<div class="relative">
+    <img src="img/courtadvmuru.jpg" class="w-full lg:h-[60vh] object-cover" alt="muruganantham">
+    <div class="absolute top-0 w-full h-full bg-black opacity-80"></div>
+    <div class="absolute top-0 bottom-0 left-4 right-0 text-white flex items-center justify-center    ">
+        <div class="2xl:max-w-[1400px] md:max-w-[1000px]  ">
+            <p class="lg:text-3xl text-md text-center animate__animated animate__fadeInLeft animate__delay-1s ibm-plex-serif-thin  ">In Every Endeavor</p>
+            <p class="lg:text-5xl text-xl py-4 animate__animated animate__fadeInLeft animate__delay-1s ibm-plex-serif-thin">practice <b class="">transforms</b> potential into <b class="">reality</b></p>
 
-<div>
+        </div>
+    </div>
+    </div>
+
+<div class="ibm-plex">
     <div class="hidden container mx-auto w-full max-w-[1350px] md:flex flex flex-col md:flex-row space-x-5 mt-5 relative ">
         <div class="md:w-[50%]">
             <img src="img/general_muruganantham.jpg" class="rounded-md object-cover" style="height: 400px; width: 900px;" alt="">
@@ -171,12 +184,12 @@ in a wide range of practice areas,including family law, <span class="text-white"
         <img src="img/general_muruganantham.jpg" class="object-cover mx-1" alt="" style="height: 300px; width: 900px;" >
        </div>
        <div class="mx-1 pt-3">
-        <p class="text-sm">As a seasoned legal professional with expertise in General Corporate Law, I have adeptly managed a wide spectrum of cases involving corporate governance, contract negotiations, mergers and acquisitions, regulatory compliance, and corporate restructuring. My experience includes providing strategic legal advice to businesses, ensuring compliance with corporate laws, and resolving intricate legal challenges. I am committed to delivering comprehensive and effective legal solutions to safeguard the interests of my corporate clients in an ever-evolving business landscape.</p>
+        <p class="text-sm ">As a seasoned legal professional with expertise in General Corporate Law, I have adeptly managed a wide spectrum of cases involving corporate governance, contract negotiations, mergers and acquisitions, regulatory compliance, and corporate restructuring. My experience includes providing strategic legal advice to businesses, ensuring compliance with corporate laws, and resolving intricate legal challenges. I am committed to delivering comprehensive and effective legal solutions to safeguard the interests of my corporate clients in an ever-evolving business landscape.</p>
        </div>
     </div>
 </div>
 
-<div>
+<div class="ibm-plex">
     <div class="hidden container mx-auto w-full max-w-[1350px] md:flex flex flex-col md:flex-row space-x-5 mt-5 relative ">
         
        
@@ -211,7 +224,7 @@ in a wide range of practice areas,including family law, <span class="text-white"
     </div>
 </div>
 
-<div>
+<div class="ibm-plex">
     <div class="hidden container mx-auto w-full max-w-[1350px] md:flex flex flex-col md:flex-row space-x-5 mt-5 relative ">
         <div class="md:w-[50%]">
             <img src="img/murugananthamfamily.jpg" class="rounded-md object-cover" style="height: 400px; width: 900px;" alt="">
@@ -245,7 +258,7 @@ in a wide range of practice areas,including family law, <span class="text-white"
     </div>
 </div>
 
-<div>
+<div class="ibm-plex">
     <div class="hidden container mx-auto w-full max-w-[1350px] md:flex flex flex-col md:flex-row space-x-5 mt-5 relative ">
         
        
@@ -280,7 +293,7 @@ in a wide range of practice areas,including family law, <span class="text-white"
     </div>
 </div>
 
-<div>
+<div class="ibm-plex">
     <div class="hidden container mx-auto w-full max-w-[1350px] md:flex flex flex-col md:flex-row space-x-5 mt-5 relative ">
         <div class="md:w-[50%]">
             <img src="img/visamuruganantham.jpg" class="rounded-md object-cover" style="height: 400px; width: 900px;" alt="">
@@ -314,7 +327,7 @@ in a wide range of practice areas,including family law, <span class="text-white"
     </div>
 </div>
 
-<div class="mt-8">
+<div class="mt-8 ibm-plex">
     <div class="w-full bg-[#567470]  pt-5 pb-8 text-xl font-serif text-white font-bold">
         <div class="container mx-auto max-w-[1300px] flex flex-col lg:flex-row justify-between px-6">
             <div class="text-center">
