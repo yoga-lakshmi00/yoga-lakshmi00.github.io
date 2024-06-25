@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>advmuruganantham</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/js/index.min.js"></script>
@@ -16,20 +16,30 @@
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
     <style>
-        * .ibm-plex-sans-thin {
-          font-family: "IBM Plex Sans", sans-serif;
-          font-weight: 100;
-          font-style: normal;
+         * .ibm-plex-sans-thin {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 100;
+        font-style: normal;
         }
+        .ibm-plex-serif-thin {
+        font-family: "IBM Plex Serif", serif;
+        font-weight: 100;
+        font-style: normal;
+        }
+
+
         b { 
             animation: animate  
                 2s linear infinite; 
         } 
+   
+
   
         @keyframes animate { 
             0% { 
@@ -45,7 +55,42 @@
             } 
         } 
     </style>
-    
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
 </head>
 
 <body class="overflow-x-hidden">
@@ -54,7 +99,7 @@
         <div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] py-4 lg:py-8 relative ">
             <div class="flex flex-col md:flex-row justify-between text-lg relative font-bold font-serif">
     
-                <div class="flex flex-col lg:flex-row justify-between md:items-center w-full pb-3">
+                <div class="flex flex-col lg:flex-row justify-between px-3 w-full pb-3">
                     <p class="text-[#445a5d]">MURUGANANTHAM P <br> <span class="text-black">+91 9444253030</span></p>
     
                     <div class="hidden lg:flex items-center space-x-4">
@@ -131,7 +176,7 @@
     </script>
     
        
-<div class="relative">
+<div class="relative ">
     <img src="img/advmuru.jpg" class="w-full lg:h-[60vh] object-cover" alt="muruganantham">
     <div class="absolute top-0 w-full h-full bg-black opacity-80"></div>
     <div class="absolute top-0 bottom-0 left-4 right-0 text-white flex items-center justify-center    ">
@@ -170,8 +215,8 @@ aria-labelledby="staticBackdropBoomLabel" aria-hidden="true">
            
             
             <div class="text-gray-400 flex flex-col md:flex-row items-center justify-between w-full md:w-[80%] gap-2">
-                <input type="date" class="border-0 py-3 w-full md:w-[50%] rounded-md p-2" name="date" placeholder="Select Date">
-                <input type="time" class="border-0 py-3 w-full md:w-[50%] rounded-md p-2" name="time" placeholder="Select Time">
+                <input placeholder="Date" class="border-0 py-3 w-72 rounded-md p-2" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                <input placeholder="Time" class="border-0 py-3 w-72 rounded-md p-2" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" id="time">
             </div>
 
             <p class="text-center border rounded-md p-3 px-4 bg-[#567470] cursor-pointer hover:bg-gray-600">Submit</p>
@@ -181,12 +226,12 @@ aria-labelledby="staticBackdropBoomLabel" aria-hidden="true">
 </div>
 </div>
 
-   <div class="2xl:ml-12">
+   <div class="">
     <div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px]">
         <div
             class="text-black font-bold font-serif w-full items-center lg:flex flex-col lg:flex-row justify-center bg-[#567470] text-lg ">
             <div
-                class="border 2xl:py-20 px-10 py-10 bg-white text-center  transition duration-300 ease-in-out hover:scale-110 ">
+                class="border 2xl:py-20 px-20 py-10 bg-white text-center  transition duration-300 ease-in-out hover:scale-110 ">
                 <i class="fa fa-home border rounded-full text-black p-8  bg-gray-100 inline-block "
                     aria-hidden="true"></i>
                 <div class="pt-6 text-[#445a5d]">
@@ -195,7 +240,7 @@ aria-labelledby="staticBackdropBoomLabel" aria-hidden="true">
                 </div>
             </div>
             <div
-                class="border 2xl:py-20 px-10 py-10 bg-gray-100 text-center  transition duration-300 ease-in-out hover:scale-110">
+                class="border 2xl:py-20 px-20 py-10 bg-gray-100 text-center  transition duration-300 ease-in-out hover:scale-110">
                 <i class="fa fa-handshake-o border rounded-full text-black p-8  bg-white inline-block"
                     aria-hidden="true"></i>
                 <div class="pt-6 text-[#445a5d]">
@@ -204,7 +249,7 @@ aria-labelledby="staticBackdropBoomLabel" aria-hidden="true">
                 </div>
             </div>
             <div
-                class="border 2xl:py-20 px-10 py-10 bg-white text-center  transition duration-300 ease-in-out hover:scale-110">
+                class="border 2xl:py-20 px-20 py-10 bg-white text-center  transition duration-300 ease-in-out hover:scale-110">
                 <i class="fa fa-users border rounded-full text-black p-8  bg-gray-100 inline-block "
                     aria-hidden="true"></i>
                 <div class="pt-6 text-[#445a5d]">
@@ -213,7 +258,7 @@ aria-labelledby="staticBackdropBoomLabel" aria-hidden="true">
                 </div>
             </div>
             <div
-                class="border 2xl:py-20 px-10 py-10 bg-gray-100 text-center  transition duration-300 ease-in-out hover:scale-110">
+                class="border 2xl:py-20 px-20 py-10 bg-gray-100 text-center  transition duration-300 ease-in-out hover:scale-110">
                 <i class="fa fa-gift border rounded-full text-black p-8  bg-white inline-block" aria-hidden="true"></i>
                 <div class="pt-6 text-[#445a5d]">
                     <p class="mb-2">100+</p>
@@ -224,27 +269,69 @@ aria-labelledby="staticBackdropBoomLabel" aria-hidden="true">
     </div>
    </div>
    
-   <div class="container mx-auto 2xl:max-w-[1350px] md:max-w-[1000px] flex flex flex-col md:flex-row space-x-5 mt-5 relative ">
-    <div class="lg:w-[600px] ">
-        <img src="img/muruganantham.jpeg" class="rounded-md object-cover md:[300px]" style="height: 500px; width: 900px;" alt="">
+   <div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] flex flex flex-col md:flex-row space-x-5 mt-5 relative ">
+    <div class="">
+        <img src="img/muruganantham.jpeg" class="rounded-md object-cover md:h-[500px] md:w-[600px] w-full"  alt="">
     </div>
     <div class="bg-[#567470] md:hidden text-white text-2xl  ">
-        <p class="border p-4 ">10+  Years Experience</p>
+        <p class="border p-4 ibm-plex-sans-thin">10+  Years Experience</p>
     </div>
-    <div class="md:pt-24 2xl:pt-32 pt-5 lg:w-[1000px]">
-        <p class="lg:text-2xl 2xl:text-2xl text-xl font-bold "> Learn About Us <br>
-        <span class=" 2xl:text-6xl md:text-3xl text-2xl font-bold"> We Provide Reliable And  Effective Legal Services</p></span>
-        <p class="pt-4 lg:text-lg text-sm">Our team of seasoned advocates is dedicated to  delivering reliable and effective legal services tailored to your needs. With a commitment to excellence and a deep understanding of the law, we're here to guide you through  every step of your legal journey. Whether you're facing a complex litigation case or need expert advice on  legal matters, trust us to provide  the support and representation you deserve.
+    <div class="md:pt-24 2xl:pt-32 pt-5 md:w-[1000px] ">
+        <p class="lg:text-2xl 2xl:text-2xl text-xl font-bold ibm-plex-sans-thin "> Learn About Us <br>
+        <span class=" 2xl:text-6xl md:text-3xl text-2xl font-bold ibm-plex-serif-thin "> We Provide Reliable And  Effective Legal Services</p></span>
+        <p class="pt-4 lg:text-lg text-sm ibm-plex-serif-thin leading-relaxed">Our team of seasoned advocates is dedicated to  delivering reliable and effective legal services tailored to your needs. With a commitment to excellence and a deep understanding of the law, we're here to guide you through  every step of your legal journey. Whether you're facing a complex litigation case or need expert advice on  legal matters, trust us to provide  the support and representation you deserve.
              Contact us today to discover how we can help you achieve your legal goals with confidence and peace of mind</p>
     </div>
    
     <div class="hidden md:flex md:absolute top-6 lg:left-80 left-0  md:left-44 bg-[#567470] text-white text-2xl">
         <p class="border p-4 px-24 ">10+  Years Experience</p>
     </div>
-   
 </div>
+    
+<!-- <div class="container mx-auto 2xl:max-w-[1000px] md:max-w-[1000px] flex justify-center 2xl:text-6xl md:text-3xl text-2xl font-bold ibm-plex-serif-thin pt-6">
+    <p>Our Team</p>
+</div>
+<div class="container mx-auto 2xl:max-w-[1000px] md:max-w-[1000px] relative ibm-plex-sans-thin">
+    <div class="slideshow-container   ">
 
-    <div class="container mx-auto 2xl:max-w-[1300px] md:max-w-[1000px] pt-6 lg:pt-10 px-6">
+        <div class="mySlides  py-20 text-center ibm-plex-sans-thin" style="display: block;">
+            <q>I'm Prasath. I have completed my advocate degree and have been involved in handling over 50 cases. In addition to my courtroom experience, I have also provided legal consultations to various clients, drafted legal documents such as contracts and agreements, and conducted legal research to support my cases effectively.</q>
+            <p class="author text-cornflowerblue"><i>~Prasath~</i></p>
+        </div>
+    
+        <div class="mySlides  hidden py-20 text-center ibm-plex-sans-thin">
+            <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+            <p class="author text-cornflowerblue">- Ernest Hemingway</p>
+        </div>
+    
+        <div class="mySlides  hidden py-20 text-center ibm-plex-sans-thin">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <p class="author text-cornflowerblue">- Thomas A. Edison</p>
+        </div>
+
+    
+        <a class="prev absolute top-1/2 -left-12 transform -translate-y-1/2 cursor-pointer text-gray-888 font-bold text-2xl py-4 px-6 rounded-r-md"
+            onclick="plusSlides(-1)">❮</a>
+        <a class="next absolute top-1/2 -right-12 transform -translate-y-1/2 cursor-pointer text-gray-888 font-bold text-2xl py-4 px-6 rounded-l-md"
+            onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    
+    <div class="dot-container text-center py-5 ">
+    
+        <span class="dot cursor-pointer h-5 w-5 bg-gray-500 rounded-full mx-1 transition-all duration-500"
+            onclick="currentSlide(1)"></span>
+        <span class="dot cursor-pointer h-5 w-5 bg-gray-500 rounded-full mx-1 transition-all duration-500"
+            onclick="currentSlide(2)"></span>
+        <span class="dot cursor-pointer h-5 w-5 bg-gray-500 rounded-full mx-1 transition-all duration-500"
+            onclick="currentSlide(3)"></span>
+    
+    </div>
+</div> -->
+
+
+
+    <div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] pt-6 lg:pt-10 px-6">
         <div class="flex flex-col lg:flex-row text-xl gap-5 font-serif inline-block">
             <div class="py-10 relative">
                 <div class="flex space-x-5 pb-5 ">
@@ -350,3 +437,5 @@ aria-labelledby="staticBackdropBoomLabel" aria-hidden="true">
 </body>
 
 </html>
+
+
