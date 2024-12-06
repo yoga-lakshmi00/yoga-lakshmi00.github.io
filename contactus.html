@@ -3,8 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>advmuruganantham_aboutus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Advocate Muruganantham">
+    <meta name="description" content="Advocate - Muruganantham">
+    <meta name="keywords" content="advocate,adv,lawyer,best lawyer,famous lawyer, best advocate,famous advocate,top 10 best advocates,advocate in india,advocate in trichy,advocate in trichy,muruganatham,muru,">
+    <meta name="author" content="Advocate Muruganantham">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>advmuruganantham</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/js/index.min.js"></script>
@@ -154,21 +159,42 @@
             <p class="text-2xl md:text-4xl text-white text-center">REQUEST A FREE CONSULTATION</p>
 
             <div >
-               <form  class="flex flex-col items-center space-y-4 pt-6" action="mailto:yogalakshmi.pa@gmail.com" method="post" enctype="text/plain">
+               <!-- <form  class="flex flex-col items-center space-y-4 pt-6" action="https://formsubmit.co/advmuruganantham89@gmail.com" method="post" enctype="">
                 <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="text" name="name" placeholder="Your Name">
                 <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="email" name="email" placeholder="Your Email">
                 <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="text" name="phone" placeholder="Your Phone Number">
-                <textarea id="about" name="about" class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" placeholder="Message"></textarea>
+                <textarea id="Subject" name="Subject" class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" placeholder="Message"></textarea>
                 
                 <div class="text-gray-400 flex flex-col md:flex-row items-center justify-between w-full md:w-[80%] gap-2">
-                    <input placeholder="Date" class="border-0 py-3 w-56 rounded-md p-2" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
-                    <input placeholder="Time" class="border-0 py-3 w-56 rounded-md p-2" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" id="time">
+                    <input placeholder="Date" class="border-0 py-3 w-56 rounded-md p-2" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" id="date">
+                    <input placeholder="Time" class="border-0 py-3 w-56 rounded-md p-2" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" name="time" id="time">
                 </div>
                 <input class="text-center border rounded-md p-3 px-14 bg-[#567470] cursor-pointer hover:bg-gray-600" type="submit" value="Send">
+            </form> -->
+            <form method="post">
+                <input type="button" value="Send Mail" onclick="sendEmail()" />
             </form>
             </div>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    function sendEmail() {
+        Email.send({
+            EMAIL_HOST_USER:'deepa@chadura.com',
+            EMAIL_HOST_PASSWORD:'ddsanyrklvekgaqn',
+            Host: "smtp.gmail.com",
+            Username: "sender@email_address.com",
+            Password: "Enter your password",
+            To: 'receiver@email_address.com',
+            From: "sender@email_address.com",
+            Subject: "Sending Email using javascript",
+            Body: "Well that was easy!!",
+        })
+            .then(function (message) {
+                alert("mail sent successfully")
+            });
+    }
+</script>
 </body>
 </html>
