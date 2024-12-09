@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advmuruganantham</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/js/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/css/index.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+<!-- Preconnect to Google Fonts for faster loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Import Cormorant and Poppins fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400&display=swap" rel="stylesheet">
+<style>
+    .cormorant-class {
+        font-family: "Cormorant", serif;
+        font-optical-sizing: auto;
+        font-weight: 900; 
+        font-style: normal;
+    }
+</style>
+
+    <style>
+       
+
+
+        b {
+            animation: animate 2s linear infinite;
+        }
+
+
+
+        @keyframes animate {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .cursor {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 9999;
+            background-color: #fdfdfd;
+            pointer-events: none;
+            mix-blend-mode: difference;
+            transform: translate(-50%, -50%);
+            transition: all 0.15s ease;
+        }
+    </style>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</head>
+<body>
+    <div class="sticky top-0 z-40 bg-white">
+        <div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] py-4 lg:py-8 relative ">
+            <div class="flex flex-col md:flex-row justify-between text-lg relative font-bold font-serif">
+                <div class="flex flex-col lg:flex-row justify-between px-3 w-full pb-3 cormorant-class">
+                    <p class="text-[#445a5d]">MURUGANANTHAM P <br> <span class="text-black">+91 9444253030</span></p>
+
+                    <div class="hidden lg:flex items-center space-x-4">
+                        <p class="uppercase text-xl">Lawyer</p>
+                        <img src="img/logo.jpg" class="w-10 h-10 lg:w-28 lg:h-28 object-cover items-center inline-block"
+                            alt="">
+                        <p class="uppercase text-2xl">justice</p>
+                    </div>
+
+                    <p class="text-[#445a5d]">Office Hours: Opens 24 hours <br> <span
+                            class="text-black">advmuru900@gmail.com</span></p>
+
+                    <div class="flex lg:hidden absolute top-[5%] right-2 cursor-pointer" onclick="navToggle()">
+                        <i class="open fa fa-bars" aria-hidden="true"></i>
+                        <p class="close hidden font-bold ">x</p>
+                    </div>
+
+                    <div class="menu hidden py-3 flex lg:hidden flex-col gap-3 cormorant-class" >
+                        <div>
+                            <a href="index.html">
+                                <p class="text-base cormorant-class">Home</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="about.html">
+                                <p class="text-base cormorant-class">About US</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="practice.html">
+                                <p class="text-base cormorant-class">Practice Area</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="faq.html">
+                                <p class="text-base cormorant-class">FAQ</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="contactus.html">
+                                <p class="text-base cormorant-class">FREE CONSULTATION</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex absolute -bottom-[15%] z-50 w-full flex items-center justify-center">
+                <div class="fixed top-4 flex items-center justify-center w-full bg-[#165153] sticky">
+                    <div class="flex lg:gap-2 xl:gap-5 items-center text-lg font-serif font-bold py-3 cormorant-class">
+                        <a href="index.html">
+                            <p
+                                class="hover:rounded-sm cormorant-class font-bold text-xl p-4 py-1 hover:bg-[#e7e2d0] hover:text-black text-[#e7e2d0] cursor-pointer">
+                                Home
+                            </p>
+                        </a>
+                        <a href="about.html">
+                            <p
+                                class="hover:rounded-sm cormorant-class font-bold text-xl p-4 py-1 hover:bg-[#e7e2d0] hover:text-black text-[#e7e2d0] cursor-pointer">
+                                About Us
+                            </p>
+                        </a>
+                        <a href="practice.html">
+                            <p
+                                class="hover:rounded-sm cormorant-class font-bold text-xl p-4 py-1 hover:bg-[#e7e2d0] hover:text-black text-[#e7e2d0] cursor-pointer">
+                                Practice Area
+                            </p>
+                        </a>
+                        <a href="faq.html">
+                            <p
+                                class="hover:rounded-sm cormorant-class font-bold text-xl p-4 py-1 hover:bg-[#e7e2d0] hover:text-black text-[#e7e2d0] cursor-pointer">
+                                FAQ
+                            </p>
+                        </a>
+                        <a href="contactus.html">
+                            <p class="rounded-sm p-4 py-1  bg-[#e8e3d2] text-black  cursor-pointer cormorant-class font-bold text-xl">
+                                FREE CONSULTATION
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function navToggle() {
+            let open = document.querySelector(".open");
+            let close = document.querySelector(".close");
+            let menu = document.querySelector(".menu");
+
+            menu.classList.toggle("hidden");
+            open.classList.toggle("hidden");
+            close.classList.toggle("hidden");
+        }
+    </script>
+        <div class="relative ">
+            <img src="https://t3.ftcdn.net/jpg/01/57/32/92/360_F_157329233_MonlTASbwvxUEsM3lp2KQIcQhZmZWWwj.jpg" class="w-full lg:h-[60vh] object-cover" alt="muruganantham">
+            <div class="absolute top-0 w-full h-full bg-black opacity-80"></div>
+            <div class="absolute top-0 bottom-0 left-4 right-0 text-white flex items-center justify-center cormorant-class    ">
+                <div>
+                    <p class="lg:text-3xl text-xl text-center animate__animated animate__fadeInLeft animate__delay-1s">Best
+                        Law Agency</p>
+                    <p class="lg:text-5xl text-2xl py-4 animate__animated animate__fadeInLeft animate__delay-1s">Our <b
+                            class="">Fighting</b> Is for Your <b class="">Justice</b> </p>
+                    <p class="text-center py-4 animate__animated animate__zoomInDown animate__delay-1s  ">
+                        <span
+                            class="rounded-md bg-[#165153] p-3 lg:text-xl text-md  cursor-pointer hover:bg-opacity-60 hover:text-white "
+                            id="create-session-button" role="button" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdropBoom">Get An Appointment</span>
+                    </p>
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="modal fade fixed 2xl:top-56 lg:top-8 top-36 left-0 flex bottom-0 right-0 justify-center insert-0 hidden w-full h-full outline-none overflow-y-auto"
+            id="staticBackdropBoom" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropBoomLabel" aria-hidden="true">
+            <div class="w-full xl:w-2/3 modal-dialog modal-lg relative pointer-events-none mt-20 border-[#005366]">
+                <div
+                    class="modal-content border border-8 border-[#f3f4f6] shadow-lg relative flex flex-col w-full pointer-events-auto bg-black bg-opacity-80 bg-clip-padding rounded-2xl outline-none text-current overflow-hidden">
+                    <div
+                        class="modal-header flex flex-shrink-0 items-center rounded-full  inline-block justify-between p-4 ">
+    
+                        <button type="button"
+                            class="btn-close box-content rounded-full bg-white p-6 border  text-white  hover:no-underline font-semibold"
+                            data-bs-dismiss="modal" aria-label="Close">
+    
+                        </button>
+                    </div>
+                    <div class="rounded-lg inline-block p-6  lg:p-8 px-6 md:px-8 lg:px-8  h-full text-white">
+                        <p class="text-2xl md:text-4xl text-white text-center">Get An Appointment</p>
+    
+                        <div class="flex flex-col items-center space-y-4 pt-5">
+                            <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2 " type="text"
+                                name="name" placeholder="Your Name">
+                            <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="text"
+                                name="email" placeholder="Your Email">
+                            <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="text"
+                                name="phone" placeholder="Your Phone Number">
+    
+    
+                            <div
+                                class="text-gray-400 flex flex-col md:flex-row items-center justify-between w-full md:w-[80%] gap-2">
+                                <input placeholder="Date" class="border-0 py-3 w-72 rounded-md p-2" type="text"
+                                    onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                                <input placeholder="Time" class="border-0 py-3 w-72 rounded-md p-2" type="text"
+                                    onfocus="(this.type='time')" onblur="(this.type='text')" id="time">
+                            </div>
+    
+                            <p class="text-center border rounded-md p-3 px-4 bg-[#567470] cursor-pointer hover:bg-gray-600">
+                                Submit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .big-letter {
+                font-size: 8rem;
+                font-weight: 100;
+                float: left;
+                margin-right: 8px;
+                line-height: 1;
+                padding-top: 0.20rem; 
+                
+            }
+        </style>
+        <div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] px-3 flex flex-col md:flex-row cormorant-class" style="padding: 68px 0% 59px 0%;">
+           <div class="flex w-[100%]">
+                <div class="w-[30%]">
+                    <img src="https://justicia.qodeinteractive.com/wp-content/uploads/2018/09/about2-img-1.png" alt="">
+                </div>
+                <div class="w-[70%]">
+                   <div>
+                    <p class="cormorant-class" style="font-size: 1.5rem; font-weight: normal;">
+                        <span class="big-letter">B</span>anking law governs the operations of financial institutions and regulates their interactions with customers, businesses, and government entities. It ensures that banks operate in a safe, sound, and transparent manner while protecting the rights of depositors, creditors, and borrowers. As a banking law advocate, we provide expert legal counsel on the intricate regulatory framework that governs the banking and financial sector. Whether you're a financial institution, a corporate client, or an individual, understanding banking law is essential for navigating complex financial transactions and avoiding legal pitfalls.
+                    </p>
+                   </div>
+                   
+                   <div class="py-5">
+                    <p style="font-size: 1.8rem;">Our Experience in Banking Law</p>
+                    <p style="font-size: 1.5rem; font-weight: normal;">At the law firm of Advocate Muruganantham, we take pride in offering decades of collective experience in the intricate field of banking law. With a thorough understanding of the legal complexities surrounding financial institutions, transactions, and regulations, we have successfully assisted numerous individuals, businesses, and banks in resolving banking-related legal challenges.
+
+                        Our experience spans across various domains of banking law, ensuring that our clients receive tailored, strategic advice and representation. Whether dealing with loan defaults, debt recovery, banking fraud, or consumer disputes, we have a proven track record of delivering practical, timely, and cost-effective solutions.</p>
+                   </div>
+                    
+                    
+                    
+                    
+                </div>
+               
+                
+           </div>
+           
+        </div>
+        <div class="flex flex-col lg:flex-row gap-3" >
+            <div class="h-auto py-10 container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] px-2 flex flex-col justify-center items-center bg-[#165153] cormorant-class">
+               <div class="flex justify-center items-center">
+                <p class="text-white py-3" style="font-size: 2rem;">Why Clients Trust Us for Banking Law</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <div class="border w-full sm:w-[306px] h-[318px] shadow-lg border-black bg-[#f2f2f0] relative overflow-hidden hover:bg-[#f4f5ef] transition-colors duration-700 group">
+                        <p class="absolute -top-4 -left-2 text-[#165153] text-opacity-20 text-8xl group-hover:text-gray-200">S</p>
+                        <p class="absolute top-10 left-8 text-[#165153] text-xl group-hover:text-black" style="font-size: 1.8rem;">Strategic Legal Advice</p>
+                        <p class="px-8 h-full items-center w-full flex justify-center text-[#165153] group-hover:text-black">Our experience allows us to take a proactive approach to banking law matters, identifying potential issues before they become disputes.</p>
+                        <div class="absolute -bottom-24 -right-20">
+                            <div class="relative rounded-full w-[188px] h-[188px] bg-[#e8e3d2]  group-hover:bg-[#165153] group-hover:bg-opacity-70">
+                                <div class="absolute top-9 left-10">
+                                    <i class="fas fa-balance-scale-right text-3xl text-[#165153] group-hover:text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border w-full sm:w-[306px] h-[318px] shadow-lg border-black bg-[#f2f2f0] relative overflow-hidden hover:bg-[#f4f5ef] transition-colors duration-700 group">
+                        <p class="absolute -top-4 -left-2 text-[#165153] text-opacity-20 text-8xl group-hover:text-gray-200">E</p>
+                        <p class="absolute top-10 left-8 text-[#165153] text-xl group-hover:text-black" style="font-size: 1.8rem;">End-to-End Service</p>
+                        <p class="px-8 h-full items-center w-full flex justify-center text-[#165153] group-hover:text-black">From advisory to litigation, we provide comprehensive legal services for individuals, corporations, and financial institutions.</p>
+                        <div class="absolute -bottom-24 -right-20">
+                            <div class="relative rounded-full w-[188px] h-[188px] bg-[#e8e3d2]  group-hover:bg-[#165153] group-hover:bg-opacity-70">
+                                <div class="absolute top-9 left-10">
+                                    <i class="fas fa-gavel text-3xl text-[#165153] group-hover:text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border w-full sm:w-[306px] h-[318px] shadow-lg border-black bg-[#f2f2f0] relative overflow-hidden hover:bg-[#f4f5ef] transition-colors duration-700 group">
+                        <p class="absolute -top-4 -left-2 text-[#165153] text-opacity-20 text-8xl group-hover:text-gray-200">I</p>
+                        <p class="absolute top-10 left-8 text-[#165153] text-xl group-hover:text-black" style="font-size: 1.8rem;">In-Depth Knowledge</p>
+                        <p class="px-8 h-full items-center w-full flex justify-center text-[#165153] group-hover:text-black">With a firm grasp of the Indian banking system, its regulatory framework, and best practices, we ensure our clients are fully informed and protected at every step.</p>
+                        <div class="absolute -bottom-24 -right-20">
+                            <div class="relative rounded-full w-[188px] h-[188px] bg-[#e8e3d2]  group-hover:bg-[#165153] group-hover:bg-opacity-70">
+                                <div class="absolute top-9 left-10">
+                                    <i class="fas fa-user-tie text-3xl text-[#165153] group-hover:text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border w-full sm:w-[306px] h-[318px] shadow-lg border-black bg-[#f2f2f0] relative overflow-hidden hover:bg-[#f4f5ef] transition-colors duration-700 group">
+                        <p class="absolute -top-4 -left-2 text-[#165153] text-opacity-20 text-8xl group-hover:text-gray-200">T</p>
+                        <p class="absolute top-10 left-8 text-[#165153] text-xl group-hover:text-black" style="font-size: 1.8rem;">Track Record of Success</p>
+                        <p class="px-8 h-full items-center w-full flex justify-center text-[#165153] group-hover:text-black">Our longstanding experience and proven track record of success in banking law cases allow us to deliver timely and effective results.                        </p>
+                        <div class="absolute -bottom-24 -right-20">
+                            <div class="relative rounded-full w-[188px] h-[188px] bg-[#e8e3d2]  group-hover:bg-[#165153] group-hover:bg-opacity-70">
+                                <div class="absolute top-9 left-10">
+                                    <i class="fas fa-graduation-cap text-3xl text-[#165153] group-hover:text-white"></i>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+        </div>
+        <div class="cormorant-class" style="padding: 68px 0% 59px 0%;">
+            <div class="relative">
+                <img src="https://justicia.qodeinteractive.com/wp-content/uploads/2018/09/h2-img-5.jpg" class="w-full h-[100vh] md:h-[100vh] lg:h-[100h] object-cover" alt="">
+        
+                <div class="absolute top-0 right-0 left-0 flex justify-center">
+                    <div class="">
+                        <p style="font-size: 3rem;font-weight: 600;">Areas of Expertise in Banking Law</p>
+                        <div class="">
+                        <p style="font-size: 1.8rem;font-weight: 590 !important;color: #165153;">Banking Regulations and Compliance</p>
+                        <p style="font-size: 1.3rem;font-weight: 550;">Banks and financial institutions must comply with a myriad of regulations, both national and international. Our legal experts provide guidance on adhering to:</p>
+                        <p class="pt-4" style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b] ">Basel III:</span> International standards on banking capital requirements, stress testing, and market liquidity risk.</p>
+                        <p style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Know Your Customer (KYC) and Anti-Money Laundering (AML):</span> Regulatory frameworks to prevent money laundering and ensure the integrity of financial transactions.</p>
+                        <p style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Consumer Protection Laws:</span> Safeguarding the rights of customers, including fair lending practices and disclosure requirements.</p>
+                        </div>
+                        <div class="">
+                            <p style="font-size: 1.8rem;font-weight: 590 !important;color: #165153;">Banking Transactions and Agreements</p>
+                            <p style="font-size: 1.3rem;font-weight: 550;">From opening accounts to securing loans, banking transactions require legal oversight. We assist with:</p>
+                            <p class="pt-4" style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Drafting and Reviewing Banking Agreements:</span> Loan contracts, credit agreements, and more.</p>
+                            <p style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Dispute Resolution:</span> Addressing issues related to banking transactions, fraud, or breach of contract.</p>
+                            <p style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Credit Facilities:</span> Including mortgages, business loans, and personal loans.</p>
+                        </div>
+                        <div class="">
+                            <p style="font-size: 1.8rem;font-weight: 590 !important;color: #165153;">Corporate Banking and Financing</p>
+                            <p style="font-size: 1.3rem;font-weight: 550;">For businesses, banking law extends beyond simple transactions to complex financial agreements. Our services include:</p>
+                            <p class="pt-4" style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Corporate Lending and Financing Structures:</span> Securing loans, negotiating interest rates, and managing liabilities.</p>
+                            <p style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Mergers and Acquisitions (M&A):</span> Legal advice on financing strategies and compliance in M&A transactions.</p>
+                            <p style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Securities:</span> Assisting with the issuance and regulation of corporate bonds, stocks, and other financial securities.</p>
+                        </div>
+                        <div class="">
+                            <p style="font-size: 1.8rem;font-weight: 590 !important;color: #165153;">Banking Litigation and Dispute Resolution</p>
+                            <p style="font-size: 1.3rem;font-weight: 550;">Disputes in banking can arise from breach of contract, fraudulent activity, or financial mismanagement. Our firm provides:</p>
+                            <p class="pt-4" style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Litigation Services:</span> Representing clients in court for banking disputes, including breach of loan agreements, misrepresentation, and fraud.</p>
+                            <p style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Arbitration and Mediation:</span> Alternative dispute resolution methods to resolve banking issues outside the courtroom, ensuring quicker, more cost-effective outcomes.</p>
+                        </div>
+                        <div class="">
+                            <p style="font-size: 1.8rem;font-weight: 590 !important;color: #165153;">Debt Recovery and Restructuring</p>
+                            <p style="font-size: 1.3rem;font-weight: 550;">Banks often face challenges related to non-performing loans and bad debts. We help with:</p>
+                            <p class="pt-4" style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Debt Recovery:</span> Legal processes for recovering overdue loans from individuals or businesses.</p>
+                            <p style="font-size: 1.3rem;font-weight: 550;"><span class="font-bold text-[#e5936b]">Restructuring and Insolvency:</span> Advising on debt restructuring, liquidation, or bankruptcy proceedings for businesses facing financial difficulties.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Text content, responsive padding, and size -->
+                
+            </div>
+        </div>
+        <div class="mt-8">
+            <div class="w-full bg-[#165153]  pt-5 pb-8 text-xl font-serif text-white font-bold">
+                <div class="container mx-auto max-w-[1300px] flex flex-col lg:flex-row justify-between px-6 cormorant-class ">
+                    <div class="text-center">
+                        <p>Visit Our Office</p>
+                        <p>________</p>
+                        <p class="pt-4">13a Ahamed Residency,Bheema Nagar, <br>Trichy-620001 </p>
+                    </div>
+                    <div class="text-center">
+                        <p>Get Touch With Us</p>
+                        <p>________</p>
+                        <p class="pt-4">+91 9444253030 <br>advmuru900@gmail.com</p>
+                    </div>
+                    <div class="text-center pb-5">
+                        <p>Office Timing</p>
+                        <p>________</p>
+                        <p class="pt-4">Monday-Sunday: Open 24 Hrs</p>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+        <div>
+            <iframe class="w-full  "
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.136614377046!2d78.691648!3d10.8086961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf51de625e949%3A0x5489f3a1f6cdebd3!2sadvocate%20muruganantham!5e0!3m2!1sen!2sin!4v1707054630779!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container mx-auto flex justify-center max-w-[1300px] gap-3 py-6">
+            <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fab fa-facebook-f rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5 "
+                aria-hidden="true"></i>
+            <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fab fa-instagram rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+                aria-hidden="true"></i>
+            <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fab fa-twitter rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+                aria-hidden="true"></i>
+            <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fab fa-google rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+                aria-hidden="true"></i>
+            <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fab fa-linkedin-in rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+                aria-hidden="true"></i>
+    
+        </div>
+</body>
+</html>
