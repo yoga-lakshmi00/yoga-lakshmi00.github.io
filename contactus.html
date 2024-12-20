@@ -159,18 +159,18 @@
             <p class="text-2xl md:text-4xl text-white text-center">REQUEST A FREE CONSULTATION</p>
 
             <div >
-               <form  class="flex flex-col items-center space-y-4 pt-6" action="https://formsubmit.co/advmuruganantham89@gmail.com" method="post" enctype="">
-                <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="text" name="name" placeholder="Your Name">
-                <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="email" name="email" placeholder="Your Email">
-                <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="text" name="phone" placeholder="Your Phone Number">
-                <textarea id="Subject" name="Subject" class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" placeholder="Message"></textarea>
-                
-                <div class="text-gray-400 flex flex-col md:flex-row items-center justify-between w-full md:w-[80%] gap-2">
-                    <input placeholder="Date" class="border-0 py-3 w-56 rounded-md p-2" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" id="date">
-                    <input placeholder="Time" class="border-0 py-3 w-56 rounded-md p-2" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" name="time" id="time">
-                </div>
-                <input class="text-center border rounded-md p-3 px-14 bg-[#567470] cursor-pointer hover:bg-gray-600" type="submit" value="Send">
-            </form>
+                <form class="flex flex-col items-center space-y-4 pt-6" onsubmit="sendEmail(event)" method="post">
+                    <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="text" name="name" id="name" placeholder="Your Name">
+                    <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="email" name="email" id="email" placeholder="Your Email">
+                    <input class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" type="text" name="phone" id="phone" placeholder="Your Phone Number">
+                    <textarea id="subject" name="subject" class="border-0 w-full md:w-[80%] py-3 rounded-md text-black p-2" placeholder="Message"></textarea>
+                    
+                    <div class="text-gray-400 flex flex-col md:flex-row items-center justify-between w-full md:w-[80%] gap-2">
+                        <input placeholder="Date" class="border-0 py-3 w-56 rounded-md p-2" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" id="date">
+                        <input placeholder="Time" class="border-0 py-3 w-56 rounded-md p-2" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" name="time" id="time">
+                    </div>
+                    <input class="text-center border rounded-md p-3 px-14 bg-[#567470] cursor-pointer hover:bg-gray-600" type="submit" value="Send">
+                </form>
             <!-- <form method="post">
                 <input type="button" value="Send Mail" onclick="sendEmail()" />
             </form> -->
@@ -178,23 +178,45 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
-    function sendEmail() {
-        Email.send({
-            EMAIL_HOST_USER:'deepa@chadura.com',
-            EMAIL_HOST_PASSWORD:'ddsanyrklvekgaqn',
-            Host: "smtp.gmail.com",
-            Username: "sender@email_address.com",
-            Password: "Enter your password",
-            To: 'receiver@email_address.com',
-            From: "sender@email_address.com",
-            Subject: "Sending Email using javascript",
-            Body: "Well that was easy!!",
-        })
-            .then(function (message) {
-                alert("mail sent successfully")
-            });
+    (function() {
+        emailjs.init({
+          publicKey: "eAxUqpPV9gY-FmLkF",
+        });
+    })();
+
+    function sendEmail(event) {
+        event.preventDefault();
+        console.log("Triggered");
+        
+        const params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            subject: document.getElementById("subject").value,
+            date: document.getElementById("date").value,
+            time: document.getElementById("time").value,
+        };
+
+        emailjs.send("service_fzfz44b", "template_98l7uvl", params).then(
+            (response) => {
+                const alertBox = document.getElementById("alertBox");
+                alertBox.style.display = "block";
+                document.getElementById("name").value = '';
+                document.getElementById("email").value = '';
+                document.getElementById("phone").value = '';
+                document.getElementById("subject").value = '';
+                document.getElementById("date").value = '';
+                document.getElementById("time").value = '';
+                setTimeout(() => {
+                    alertBox.style.display = "none";
+                }, 3000);
+            },
+            (error) => {
+                alert("Failed to send message. Please try again later.");
+            }
+        );
     }
 </script>
-</body>
 </html>
