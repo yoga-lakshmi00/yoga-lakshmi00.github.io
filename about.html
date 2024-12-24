@@ -1,127 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="title" content="Advocate Muruganantham">
-    <meta name="description" content="Advocate - Muruganantham">
-    <meta name="keywords" content="advocate,adv,lawyer,best lawyer,famous lawyer, best advocate,famous advocate,top 10 best advocates,advocate in india,advocate in trichy,advocate in trichy,muruganatham,muru,">
-    <meta name="author" content="Advocate Muruganantham">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>advmuruganantham</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/js/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/css/index.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-alpha2/dist/css/index.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+<!-- Preconnect to Google Fonts for faster loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <style>
-            * .ibm-plex-sans-thin {
-           font-family: "IBM Plex Sans", sans-serif;
-           font-weight: 100;
-           font-style: normal;
-           }
-           .ibm-plex-serif-thin {
-           font-family: "IBM Plex Serif", serif;
-           font-weight: 100;
-           font-style: normal;
-           }
-           
-           b { 
-               animation: animate  
-                   2s linear infinite; 
-           } 
-      
-   
-     
-           @keyframes animate { 
-               0% { 
-                   opacity: 0; 
-               } 
-     
-               50% { 
-                   opacity: 0.7; 
-               } 
-     
-               100% { 
-                   opacity: 0; 
-               } 
-           } 
-       </style>
+<!-- Import Cormorant and Poppins fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400&display=swap" rel="stylesheet">
+<style>
+    .cormorant-class {
+        font-family: "Cormorant", serif;
+        font-optical-sizing: auto;
+        font-weight: 900; 
+        font-style: normal;
+    }
+</style>
+
+    <style>
+       
+
+
+        b {
+            animation: animate 2s linear infinite;
+        }
+
+
+
+        @keyframes animate {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .cursor {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 9999;
+            background-color: #fdfdfd;
+            pointer-events: none;
+            mix-blend-mode: difference;
+            transform: translate(-50%, -50%);
+            transition: all 0.15s ease;
+        }
+    </style>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
 </head>
-<body class="overflow-x-hidden">
+
+<body class="overflow-x-hidden cormorant-class">
+
     <div class="sticky top-0 z-40 bg-white">
         <div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] py-4 lg:py-8 relative ">
             <div class="flex flex-col md:flex-row justify-between text-lg relative font-bold font-serif">
-    
-                <div class="flex flex-col lg:flex-row justify-between px-3 w-full pb-3">
+                <div class="flex flex-col lg:flex-row justify-between px-3 w-full pb-3 cormorant-class">
                     <p class="text-[#445a5d]">MURUGANANTHAM P <br> <span class="text-black">+91 9444253030</span></p>
-    
+
                     <div class="hidden lg:flex items-center space-x-4">
                         <p class="uppercase text-xl">Lawyer</p>
-                        <img src="img/logo.jpg" class="w-10 h-10 lg:w-28 lg:h-28 object-cover items-center inline-block" alt="">
+                        <img src="img/logo.jpg" class="w-10 h-10 lg:w-28 lg:h-28 object-cover items-center inline-block"
+                            alt="">
                         <p class="uppercase text-2xl">justice</p>
                     </div>
-    
-                    <p class="text-[#445a5d]">Office Hours: Opens 24 hours <br> <span class="text-black">advmuru900@gmail.com</span></p>
-    
+
+                    <p class="text-[#445a5d]">Office Hours: Opens 24 hours <br> <span
+                            class="text-black">advmuru900@gmail.com</span></p>
+
                     <div class="flex lg:hidden absolute top-[5%] right-2 cursor-pointer" onclick="navToggle()">
                         <i class="open fa fa-bars" aria-hidden="true"></i>
                         <p class="close hidden font-bold ">x</p>
                     </div>
-    
-                    <div class="menu hidden py-3 flex lg:hidden flex-col gap-3">
+
+                    <div class="menu hidden py-3 flex lg:hidden flex-col gap-3 cormorant-class" >
                         <div>
-                            <a href="index.html"><p class="text-base">Home</p></a>
+                            <a href="index.html">
+                                <p class="text-base cormorant-class">Home</p>
+                            </a>
                         </div>
                         <div>
-                            <a href="about.html"><p class="text-base">About US</p></a>
+                            <a href="about.html">
+                                <p class="text-base cormorant-class">About US</p>
+                            </a>
                         </div>
                         <div>
-                            <a href="practice.html"><p class="text-base">Practice Area</p></a>
+                            <a href="practice.html">
+                                <p class="text-base cormorant-class">Practice Area</p>
+                            </a>
                         </div>
                         <div>
-                            <a href="faq.html"> <p class="text-base">FAQ</p></a>
+                            <a href="faq.html">
+                                <p class="text-base cormorant-class">FAQ</p>
+                            </a>
                         </div>
                         <div>
-                            <a href="contactus.html"><p class="text-base">FREE CONSULTATION</p></a>
+                            <a href="contactus.html">
+                                <p class="text-base cormorant-class">FREE CONSULTATION</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-    
+
             <div class="hidden lg:flex absolute -bottom-[15%] z-50 w-full flex items-center justify-center">
-                <div class="fixed top-4 flex items-center justify-center w-full bg-[#567470] sticky">
-                    <div class="flex lg:gap-2 xl:gap-5 items-center text-lg font-serif font-bold py-3 ">
+                <div class="fixed top-4 flex items-center justify-center w-full bg-[#165153] sticky">
+                    <div class="flex lg:gap-2 xl:gap-5 items-center text-lg font-serif font-bold py-3 cormorant-class">
                         <a href="index.html">
-                            <p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                            <p
+                                class="hover:rounded-sm cormorant-class font-bold text-xl p-4 py-1 hover:bg-[#e7e2d0] hover:text-black text-[#e7e2d0] cursor-pointer">
                                 Home
                             </p>
                         </a>
                         <a href="about.html">
-                            <p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
+                            <p
+                                class="hover:rounded-sm cormorant-class font-bold text-xl p-4 py-1 hover:bg-[#e7e2d0] hover:text-black text-[#e7e2d0] cursor-pointer">
                                 About Us
                             </p>
                         </a>
-                        <a href="practice.html"><p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                            Practice Area
-                        </p></a>
-                        <a href="faq.html"> <p class="hover:rounded-sm p-4 py-1 hover:bg-[#F3EEED] hover:text-black text-white cursor-pointer">
-                            FAQ
-                        </p></a>
-                        <a href="contactus.html"><p class="rounded-sm p-4 py-1  bg-[#F3EEED] text-black  cursor-pointer">
-                            FREE CONSULTATION
-                        </p></a>
+                        <a href="practice.html">
+                            <p
+                                class="hover:rounded-sm cormorant-class font-bold text-xl p-4 py-1 hover:bg-[#e7e2d0] hover:text-black text-[#e7e2d0] cursor-pointer">
+                                Practice Area
+                            </p>
+                        </a>
+                        <a href="faq.html">
+                            <p
+                                class="hover:rounded-sm cormorant-class font-bold text-xl p-4 py-1 hover:bg-[#e7e2d0] hover:text-black text-[#e7e2d0] cursor-pointer">
+                                FAQ
+                            </p>
+                        </a>
+                        <a href="contactus.html">
+                            <p class="rounded-sm p-4 py-1  bg-[#e8e3d2] text-black  cursor-pointer cormorant-class font-bold text-xl">
+                                FREE CONSULTATION
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -130,180 +206,632 @@
 
 
     <script>
-
-        function navToggle(){
+        function navToggle() {
             let open = document.querySelector(".open");
             let close = document.querySelector(".close");
             let menu = document.querySelector(".menu");
-            
+
             menu.classList.toggle("hidden");
             open.classList.toggle("hidden");
             close.classList.toggle("hidden");
         }
-       
-
     </script>
 
 
-
-<div class="relative">
-    <img src="img/muruganantham3.jpg" class="w-full lg:h-[60vh] object-cover" alt="muruganantham">
-    <div class="absolute top-0 w-full h-full bg-black opacity-80"></div>
-    <div class="absolute top-0 bottom-0 left-4 right-0 text-white flex items-center justify-center    ">
-        <div class="2xl:max-w-[1400px] md:max-w-[1000px]  ">
-            <p class="lg:text-3xl text-md text-center animate__animated animate__fadeInLeft animate__delay-1s ibm-plex-serif-thin  ">Leading the Charge</p>
-            <p class="lg:text-5xl text-xl py-4 animate__animated animate__fadeInLeft animate__delay-1s ibm-plex-serif-thin">Your <b class="">Trusted</b> Advocates for <b class="">Justice</b></p>
+    <div class="relative ">
+        <img src="img/muruganantham3.jpg" class="w-full lg:h-[60vh] object-cover" alt="muruganantham">
+        <div class="absolute top-0 w-full h-full bg-black opacity-80"></div>
+        <div class="absolute top-0 bottom-0 left-4 right-0 text-white flex items-center justify-center cormorant-class    ">
+            <div>
+                <p class="lg:text-3xl text-xl text-center animate__animated animate__fadeInLeft animate__delay-1s">Leading the Charge</p>
+                <p class="lg:text-5xl text-2xl py-4 animate__animated animate__fadeInLeft animate__delay-1s">Your <b
+                        class="">Trusted</b> Advocates for <b class="">Justice</b> </p>
+                <p class="text-center py-4 animate__animated animate__zoomInDown animate__delay-1s  ">
+                    <span
+                        class="rounded-md bg-[#165153] p-3 lg:text-xl text-md  cursor-pointer hover:bg-opacity-60 hover:text-white "
+                        id="create-session-button" role="button" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdropBoom">Get An Appointment</span>
+                </p>
+            </div>
 
         </div>
-     
+
     </div>
+
+    <div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] mt-5 cormorant-class">
+        <!-- Tabs Header -->
+        <div class="flex flex-col md:flex-row">
+            <button class="tab-button py-2 px-4 text-2xl font-semibold hover:text-black hover:bg-opacity-80 focus:outline-none border-t-2  border-l-2 px-20 bg-[#165153]" data-tab="tab1">History</button>
+            <button class="tab-button py-2 px-4 text-2xl font-semibold hover:text-black hover:bg-opacity-80 focus:outline-none border-t-2  border-l-2 px-20 bg-[#165153]" data-tab="tab2">Our Philosophy</button>
+            <button class="tab-button py-2 px-4 text-2xl font-semibold hover:text-black hover:bg-opacity-80 focus:outline-none border-t-2 border-r-4 border-l-2 px-20 bg-[#165153]" data-tab="tab3">Client-Centered Approach</button>
+        </div>
+
+        <!-- Our Philosophy
+        Our Founders -->
     
-</div>
-
-
-
-<div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] flex flex flex-col md:flex-row space-x-5 mt-5 relative ">
-    <div class="">
-        <img src="img/muruganantham4.jpg" class="rounded-md object-cover md:h-[500px] md:w-[600px] h-[300px] w-full"  alt="">
-    </div>
-    <div class="bg-[#567470] md:hidden text-white text-2xl  ">
-        <p class="border p-4 ibm-plex-sans-thin">10+  Years Experience</p>
-    </div>
-    <div class="md:pt-24 2xl:pt-32 pt-5 md:w-[1000px] ">
-        <p class="lg:text-2xl 2xl:text-2xl text-xl font-bold ibm-plex-sans-thin "> Learn About Us <br>
-        <span class=" 2xl:text-6xl md:text-3xl text-2xl font-bold ibm-plex-serif-thin"> We Provide Reliable And  Effective Legal Services</p></span>
-        <p class="pt-4 lg:text-lg text-sm ibm-plex-serif-thin">Our team of seasoned advocates is dedicated to  delivering reliable and effective legal services tailored to your needs. With a commitment to excellence and a deep understanding of the law, we're here to guide you through  every step of your legal journey. Whether you're facing a complex litigation case or need expert advice on  legal matters, trust us to provide  the support and representation you deserve.
-             Contact us today to discover how we can help you achieve your legal goals with confidence and peace of mind</p>
-    </div>
-   
-    <div class="hidden md:flex md:absolute top-6 lg:left-80 left-0  md:left-44 bg-[#567470] text-white text-2xl">
-        <p class="border p-4 px-24 ">10+  Years Experience</p>
-    </div>
-</div>
-
-
-
-<div class="container mx-auto max-w-[1400px] mt-8 relative">
-    <div class="relative">
-        <img src="img/muru.jpg" class="flex flex flex-col md:flex-row justify-center relative rounded-lg bg-black opacity-70" style="height: 500px; width: 1350px;" alt="">
-
+        <!-- Tabs Content -->
+        <style>
+            .big-letter {
+                font-size: 8rem;
+                font-weight: 100;
+                float: left;
+                margin-right: 8px;
+                line-height: 1;
+                padding-top: 0.20rem; 
+                
+            }
+        </style>
         
-        <div class="absolute inset-0 top-10 left-0 right-10 flex justify-center items-center w-full">
-            <div class="rounded-lg inline-block p-6 py-4 lg:p-10  md:px-10 lg:px-48 bg-black bg-opacity-80 text-white px-10">
-                <p class="text-2xl md:text-4xl text-white text-center ibm-plex-serif-thin">Get An Appointment</p>
-    
-                <form method="post" action="send_email.php">
-                    <div class="flex flex-col items-center space-y-4 pt-5">
-                        <input class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2 input-field" type="text" name="name" placeholder="Your Name">
-                        <input class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2 input-field" type="text" name="email" placeholder="Your Email">
-                        <input class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2 input-field" type="text" name="phone" placeholder="Your Phone Number">
+        <div class="border-2">
+            <div id="tab1" class="tab-content hidden bg-[#f2f2f0]">
+                <div class="">
+                    <p class="cormorant-class p-6 text-md md:text-md 2xl:text-xl" style="font-weight: normal;line-height: 35px; ">
+                        <span class="big-letter">W</span>ith over 10 years of legal experience, our law firm has established a strong reputation for providing expert legal counsel and representation. We specialize in both civil and criminal law, offering comprehensive solutions to meet the diverse needs of our clients.
+
+                        Our team of more than 20 highly qualified lawyers brings a wealth of knowledge and expertise, handling cases ranging from complex corporate disputes to serious criminal defense. We have built a history of success by consistently achieving favorable outcomes for our clients.
                         
-                        <div class="text-gray-400 flex flex-col md:flex-row items-center w-[100%] justify-between gap-2">
-                            <input placeholder="Date" class="border-0 py-3 w-56 rounded-md p-2" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
-                            <div>
-                                <input placeholder="Time" class="border-0 py-3 w-44 rounded-md p-2" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" id="time" />
+                        Throughout the years, we have earned the trust of individuals, businesses, and corporations by delivering effective solutions and demonstrating unwavering dedication to justice.
+                        
+                        We have grown significantly over the years, expanding our practice and areas of focus. Our firm is known for its personalized approach, ensuring that each client receives tailored legal advice and representation.
+                        
+                        Whether negotiating settlements or advocating in court, our priority is to achieve the best possible results for our clients. We are deeply committed to protecting the rights of those we represent.
+                        
+                        At the core of our firm is a focus on integrity, transparency, and client satisfaction. We pride ourselves on our collaborative approach, working closely with clients to navigate even the most challenging legal issues.
+                        
+                        Our history reflects our unwavering commitment to excellence, and we look forward to continuing to serve our clients with the highest level of legal expertise.</p>
+                   </div>
+            </div>
+            <div id="tab2" class="tab-content hidden bg-[#f2f2f0]">
+                <div class="">
+                    <p class="cormorant-class p-6 text-md md:text-md 2xl:text-xl" style="font-weight: normal;line-height: 35px; ">
+                        <span class="big-letter">A</span>t our law firm, we believe that justice is more than just a service; it is a commitment to making a meaningful difference in the lives of our clients. We understand that legal challenges can be stressful and overwhelming, which is why we approach each case with empathy and dedication.
+
+                        Our philosophy is founded on integrity, transparency, and personalized attention. We take the time to listen and understand the unique needs and goals of each client, ensuring that we provide tailored legal solutions that best align with their objectives.
+                        
+                        We are dedicated to upholding the highest ethical standards, ensuring that every case is handled with professionalism and care. Our firm values honesty, open communication, and mutual respect, fostering long-lasting relationships built on trust.
+                        
+                        We believe that every client deserves the highest level of service, and we work tirelessly to achieve the best possible outcomes. By offering clear, concise, and timely communication, we keep our clients informed every step of the way.
+                        
+                        Our team is committed to delivering results while maintaining a compassionate, client-centered approach. We view each case not as just a legal matter, but as an opportunity to positively impact our clients’ lives and help them achieve justice.</p>
+                   </div>
+            </div>
+            <div id="tab3" class="tab-content hidden bg-[#f2f2f0]">
+                <div class="">
+                    <p class="cormorant-class p-6 text-md md:text-md 2xl:text-xl" style="font-weight: normal;line-height: 35px; ">
+                        <span class="big-letter">A</span>t our law firm, we place our clients at the heart of everything we do. Our client-centered approach ensures that every individual and business receives the personalized attention and legal support they deserve. We take the time to truly understand the unique needs and goals of each client, allowing us to craft tailored strategies that best address their challenges.
+
+                        Whether navigating complex legal matters or providing simple legal guidance, our team is committed to clear communication and transparent advice. We believe that strong relationships and trust form the foundation of successful legal representation.
+                        
+                        Our priority is not just achieving favorable outcomes but also ensuring that our clients feel supported and confident throughout the legal process. With a focus on responsiveness and empathy, we are dedicated to delivering the highest level of service in every case we handle.
+                        
+                        Your concerns are our concerns, and we work tirelessly to secure the best possible results. We approach every case with care and diligence, treating each client as a partner in the journey. Our philosophy is simple: your success is our success.
+                        
+                        By focusing on your unique needs and providing guidance every step of the way, we ensure that our client-centered approach delivers the best possible legal experience.</p>
+                   </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+    
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    tabContents.forEach(content => content.classList.add('hidden'));
+                    
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('text-white','bg-[#f2f2f0]');
+                    });
+    
+                    document.getElementById(tabId).classList.remove('hidden');
+                    
+                    this.classList.add('text-black','bg-[#f2f2f0]');
+                });
+            });
+    
+            tabButtons[0].click();
+        });
+    </script>
+
+<div class="container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] flex flex-col md:flex-row space-y-5 md:space-x-5 mt-10 relative cormorant-class">
+    <div class="bg-clip-padding">
+        <img src="https://img.freepik.com/free-photo/drawings-about-legal-profession_23-2151190639.jpg" 
+             class="rounded-md object-cover w-full md:w-[600px] h-[300px] md:h-[500px]" 
+             alt="muruganantham">
+    </div>
+    
+    <div class="bg-[#f2f2f0] w-full md:w-[800px] p-6" style="margin-top: 0px !important;">
+        <p class="text-2xl md:text-2xl">Our Features <br>
+            <span class="text-4xl text-orange-700">Why Choose Us</span>
+        </p>
+        
+        <div class="mt-5">
+            <div class="flex  space-x-5 md:space-x-5 md:space-y-0">
+                <div class="flex items-start">
+                    <p class="rounded-full px-3 py-1 bg-[#165153] text-white inline-block">1</p>
+                </div>
+                <div>
+                    <p class="items-center inline-block">
+                        <span class="text-xl md:text-xl 2xl:text-xl font-bold">Proven Expertise</span> <br> 
+                        <span class="text-md md:text-md 2xl:text-lg">With over 10 years of experience and a team of more than 20 qualified lawyers, we specialize in handling both civil and criminal cases, ensuring expert guidance and successful outcomes.
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex  space-x-5 md:space-x-5 md:space-y-0 mt-5">
+                <div class="flex items-start">
+                    <p class="rounded-full px-3 py-1 bg-[#165153] text-white inline-block">2</p>
+                </div>
+                <div>
+                    <p class="items-center inline-block">
+                        <span class="text-xl md:text-xl 2xl:text-xl font-bold">Personalized Service</span> <br> 
+                        <span class="text-md md:text-md 2xl:text-lg">We take the time to understand your unique legal needs and offer tailored solutions, ensuring that your case is handled with the attention and care it deserves.
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex  space-x-5 md:space-x-5 md:space-y-0 mt-5">
+                <div class="flex items-start">
+                    <p class="rounded-full px-3 py-1 bg-[#165153] text-white inline-block">3</p>
+                </div>
+                <div>
+                    <p class="items-center inline-block ">
+                        <span class="text-xl md:text-xl 2xl:text-xl font-bold">Commitment to Results</span> <br> 
+                        <span class="text-md md:text-md 2xl:text-lg">Our firm is dedicated to achieving the best possible results for our clients, working tirelessly to protect your interests and secure favorable outcomes at every step of the legal process.
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="flex  space-x-5 md:space-x-5 md:space-y-0 mt-5">
+                <div class="flex items-start">
+                    <p class="rounded-full px-3 py-1 bg-[#165153] text-white inline-block">4</p>
+                </div>
+                <div>
+                    <p class="items-center inline-block ">
+                        <span class="text-xl md:text-xl 2xl:text-xl font-bold">Experienced Trial Lawyers</span> <br> 
+                        <span class="text-md md:text-md 2xl:text-lg">Our team includes skilled trial attorneys with extensive courtroom experience, prepared to fight for your rights and defend your interests in any legal setting.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="flex flex-col lg:flex-row gap-3 py-5" >
+        <div class="h-auto py-10 container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] px-2 flex justify-center items-center bg-[#165153] cormorant-class">
+            <div class="flex flex-wrap justify-center gap-3">
+                <div class="border w-full sm:w-[306px] h-[318px] shadow-lg border-black bg-[#f2f2f0] relative overflow-hidden hover:bg-[#f4f5ef] transition-colors duration-700 group">
+                    <p class="absolute -top-4 -left-2 text-[#165153] text-opacity-20 text-8xl group-hover:text-gray-200">L</p>
+                    <p class="absolute top-10 left-8 text-[#165153] text-xl group-hover:text-black" style="font-size: 1.8rem;">Legal Consultation Services</p>
+                    <p class="px-8 h-full items-center w-full flex justify-center text-[#165153] group-hover:text-black">Get expert legal advice on a variety of legal matters. Book your consultation today.</p>
+                    <div class="absolute -bottom-24 -right-20">
+                        <div class="relative rounded-full w-[188px] h-[188px] bg-[#e8e3d2]  group-hover:bg-[#165153] group-hover:bg-opacity-70">
+                            <div class="absolute top-9 left-10">
+                                <i class="fas fa-balance-scale-right text-3xl text-[#165153] group-hover:text-white"></i>
                             </div>
                         </div>
-                        
-                        <button type="submit"><p class="text-center border rounded-md p-3 px-4 bg-[#567470] cursor-pointer hover:bg-gray-600">Get An Appointment</p></button>
                     </div>
-                </form>
+                </div>
+                <div class="border w-full sm:w-[306px] h-[318px] shadow-lg border-black bg-[#f2f2f0] relative overflow-hidden hover:bg-[#f4f5ef] transition-colors duration-700 group">
+                    <p class="absolute -top-4 -left-2 text-[#165153] text-opacity-20 text-8xl group-hover:text-gray-200">A</p>
+                    <p class="absolute top-10 left-8 text-[#165153] text-xl group-hover:text-black" style="font-size: 1.8rem;">Areas of Expertise</p>
+                    <p class="px-8 h-full items-center w-full flex justify-center text-[#165153] group-hover:text-black">Our expertise spans corporate law, family law, criminal defense, estate planning, and more.</p>
+                    <div class="absolute -bottom-24 -right-20">
+                        <div class="relative rounded-full w-[188px] h-[188px] bg-[#e8e3d2]  group-hover:bg-[#165153] group-hover:bg-opacity-70">
+                            <div class="absolute top-9 left-10">
+                                <i class="fas fa-gavel text-3xl text-[#165153] group-hover:text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border w-full sm:w-[306px] h-[318px] shadow-lg border-black bg-[#f2f2f0] relative overflow-hidden hover:bg-[#f4f5ef] transition-colors duration-700 group">
+                    <p class="absolute -top-4 -left-2 text-[#165153] text-opacity-20 text-8xl group-hover:text-gray-200">C</p>
+                    <p class="absolute top-10 left-8 text-[#165153] text-xl group-hover:text-black" style="font-size: 1.8rem;">Client Testimonials</p>
+                    <p class="px-8 h-full items-center w-full flex justify-center text-[#165153] group-hover:text-black">Read how our expert legal services have helped clients achieve successful results.</p>
+                    <div class="absolute -bottom-24 -right-20">
+                        <div class="relative rounded-full w-[188px] h-[188px] bg-[#e8e3d2]  group-hover:bg-[#165153] group-hover:bg-opacity-70">
+                            <div class="absolute top-9 left-10">
+                                <i class="fas fa-user-tie text-3xl text-[#165153] group-hover:text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border w-full sm:w-[306px] h-[318px] shadow-lg border-black bg-[#f2f2f0] relative overflow-hidden hover:bg-[#f4f5ef] transition-colors duration-700 group">
+                    <p class="absolute -top-4 -left-2 text-[#165153] text-opacity-20 text-8xl group-hover:text-gray-200">L</p>
+                    <p class="absolute top-10 left-8 text-[#165153] text-xl group-hover:text-black" style="font-size: 1.8rem;">Legal Resources & Blog</p>
+                    <p class="px-8 h-full items-center w-full flex justify-center text-[#165153] group-hover:text-black">Explore legal tips, case studies, and the latest news to stay informed and protected.</p>
+                    <div class="absolute -bottom-24 -right-20">
+                        <div class="relative rounded-full w-[188px] h-[188px] bg-[#e8e3d2]  group-hover:bg-[#165153] group-hover:bg-opacity-70">
+                            <div class="absolute top-9 left-10">
+                                <i class="fas fa-graduation-cap text-3xl text-[#165153] group-hover:text-white"></i>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-  
     </div>
-</div>
 
 
-<div class="container mx-auto max-w-[1400px] flex flex flex-col md:flex-row space-x-5 mt-10 relative ">
-    <div class="">
-        <img src="img/advocate.jpg" class="rounded-md "  style="height: 500px; width: 600px;" alt="">
+<div class="gallery container mx-auto 2xl:max-w-[1400px] md:max-w-[1000px] cormorant-class pt-12">
+    <div class="gallery-container">
+
+       
+
+        <div class="gallery-item gallery-item-2" data-index="2">
+            <div class="img" style="width: 520px; height: 293px; flex-shrink: 0; position: relative;border-radius: 10px;
+            background: #FFF;
+            box-shadow: 1px 1px 25px 1px rgba(27, 29, 33, 0.10);">
+                    <div style="position: absolute; right: 0; top: 0;">
+                        <!-- <svg width="104" height="73" viewBox="0 0 104 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_139_1104)">
+                                <path
+                                    d="M31.3005 50.7679C37.1054 59.0817 46.4102 64.2653 56.5346 64.8255L90.4024 66.6995C108.582 67.7054 124.141 53.7979 125.173 35.6203L125.833 23.9903C126.549 11.3674 119.991 -0.555326 108.946 -6.70839L64.5408 -31.446C53.4958 -37.5991 39.9061 -36.9007 29.5501 -29.6478L20.0087 -22.9655C5.09548 -12.521 1.45898 8.0284 11.8821 22.9566L31.3005 50.7679Z"
+                                    fill="#165153" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_139_1104" x="0.936523" y="-37.6177" width="127.95" height="110.369"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dx="-1" dy="2" />
+                                    <feGaussianBlur stdDeviation="2" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_139_1104" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_139_1104"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg> -->
+                    </div>
+                    <div style="width: 54.667px;
+                height: 56.349px;
+                flex-shrink: 0;
+                padding-top: 25px;
+                padding-left:25px;">
+                        <i class="fas fa-gavel text-4xl text-[#165153] group-hover:text-white"></i>
+                          
+                    </div>
+                    <div style=" padding:0px 85px;">
+                        <h1 style="color: #165153;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 173.616%;">Extensive Legal Expertise</h1>
+                        <h1 style="color: black;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;">Muruganantham Advocate brings years of experience in both civil and criminal law, with a proven track record of successfully handling complex cases. The firm's deep legal knowledge and sharp analytical skills ensure that clients receive expert guidance for all their legal matters.</h1>
+    
+                    </div>
+                </div>
+          
+        </div>
+        <div class="gallery-item gallery-item-3 active" data-index="3">
+            <div class="img" style="width: 520px; height: 293px; flex-shrink: 0; position: relative;border-radius: 10px;
+            background: #FFF;
+            box-shadow: 1px 1px 25px 1px rgba(27, 29, 33, 0.10);">
+                    <div style="position: absolute; right: 0; top: 0;">
+                        <!-- <svg width="104" height="73" viewBox="0 0 104 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_139_1104)">
+                                <path
+                                    d="M31.3005 50.7679C37.1054 59.0817 46.4102 64.2653 56.5346 64.8255L90.4024 66.6995C108.582 67.7054 124.141 53.7979 125.173 35.6203L125.833 23.9903C126.549 11.3674 119.991 -0.555326 108.946 -6.70839L64.5408 -31.446C53.4958 -37.5991 39.9061 -36.9007 29.5501 -29.6478L20.0087 -22.9655C5.09548 -12.521 1.45898 8.0284 11.8821 22.9566L31.3005 50.7679Z"
+                                    fill="#165153" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_139_1104" x="0.936523" y="-37.6177" width="127.95" height="110.369"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dx="-1" dy="2" />
+                                    <feGaussianBlur stdDeviation="2" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_139_1104" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_139_1104"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg> -->
+                    </div>
+                    <div style="width: 54.667px;
+                height: 56.349px;
+                flex-shrink: 0;
+                padding-top: 25px;
+                padding-left:25px;">
+                       <i class="fas fa-gavel text-4xl text-[#165153] group-hover:text-white"></i>
+                    </div>
+                    <div style=" padding:0px 85px;">
+                        <h1 style="color: #165153;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 173.616%;">Personalized Attention to Clients</h1>
+                        <h1 style="color: black;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;">Muruganantham Advocate is dedicated to offering a client-centered approach, tailoring legal strategies to the specific needs of each individual or business. This personalized service ensures that every client feels supported and receives the most effective legal solutions.</h1>
+    
+                    </div>
+                </div>
+         
+        </div>
+        <div class="gallery-item gallery-item-4" data-index="4">
+            <div class="img" style="width: 520px; height: 293px; flex-shrink: 0; position: relative;border-radius: 10px;
+            background: #FFF;
+            box-shadow: 1px 1px 25px 1px rgba(27, 29, 33, 0.10);">
+                    <div style="position: absolute; right: 0; top: 0;">
+                        <!-- <svg width="104" height="73" viewBox="0 0 104 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_139_1104)">
+                                <path
+                                    d="M31.3005 50.7679C37.1054 59.0817 46.4102 64.2653 56.5346 64.8255L90.4024 66.6995C108.582 67.7054 124.141 53.7979 125.173 35.6203L125.833 23.9903C126.549 11.3674 119.991 -0.555326 108.946 -6.70839L64.5408 -31.446C53.4958 -37.5991 39.9061 -36.9007 29.5501 -29.6478L20.0087 -22.9655C5.09548 -12.521 1.45898 8.0284 11.8821 22.9566L31.3005 50.7679Z"
+                                    fill="#165153" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_139_1104" x="0.936523" y="-37.6177" width="127.95" height="110.369"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dx="-1" dy="2" />
+                                    <feGaussianBlur stdDeviation="2" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_139_1104" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_139_1104"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg> -->
+                    </div>
+                    <div style="width: 54.667px;
+                height: 56.349px;
+                flex-shrink: 0;
+                padding-top: 25px;
+                padding-left:25px;">
+                        <i class="fas fa-gavel text-4xl text-[#165153] group-hover:text-white"></i>
+                    </div>
+                    <div style=" padding:0px 85px;">
+                        <h1 style="color: #165153;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 173.616%;">Commitment to Justice and Results</h1>
+                    <h1 style="color: black;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;">The firm is passionate about achieving the best possible outcomes for clients, with a strong commitment to justice. Muruganantham Advocate works tirelessly to protect clients' rights and interests, delivering results with integrity and professionalism at every stage of the legal process.</h1>
+    
+                    </div>
+                </div>
+          
+        </div>
         
+      </div>
+
+
+      <div class="gallery-controls lg:mt-5 2xl:mt-16"></div>
+</div>
+
+
+    <div class="mt-8">
+        <div class="w-full bg-[#165153]  pt-5 pb-8 text-xl font-serif text-white font-bold">
+            <div class="container mx-auto max-w-[1300px] flex flex-col lg:flex-row justify-between px-6 cormorant-class ">
+                <div class="text-center">
+                    <p>Visit Our Office</p>
+                    <p>________</p>
+                    <p class="pt-4">13a Ahamed Residency,Bheema Nagar, <br>Trichy-620001 </p>
+                </div>
+                <div class="text-center">
+                    <p>Get Touch With Us</p>
+                    <p>________</p>
+                    <p class="pt-4">+91 9444253030 <br>advmuru900@gmail.com</p>
+                </div>
+                <div class="text-center pb-5">
+                    <p>Office Timing</p>
+                    <p>________</p>
+                    <p class="pt-4">Monday-Sunday: Open 24 Hrs</p>
+                </div>
+
+
+            </div>
+        </div>
     </div>
-   
-    <div class="absolute top-3 ibm-plex-serif-thin  right-0 md:right-36 bg-white opacity-80 md:opacity-100 md:bg-white rounded-md text-black p-4 mt-5 max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl" style="height: 450px; width: 500%;">        
-        <p class="text-lg">Our Features <br>
-            <span class="text-4xl ">Why Choose Us</span> </p>
-        <div class="flex space-x-5 mt-5">
-            <div>
-                <p class="rounded-full px-3 py-1 bg-[#567470] inline-block">1</p>
-            </div>
-            <div>
-                <p class=" items-center inline-block"><span class="text-xl font-bold">Best Law Practices</span> <br> psum duo tempor elitr rebum stet magna amet kasd. Ipsum magna ipsum ipsum stet ipsum
-                
-                </p>
-            </div>
 
-        </div>
-        <div class="flex space-x-5 mt-5">
-            <div>
-                <p class="rounded-full px-3 py-1 bg-[#567470] inline-block">2</p>
-            </div>
-            <div>
-                <p class=" items-center inline-block"><span class="text-xl font-bold">Best Law Practices</span> <br> psum duo tempor elitr rebum stet magna amet kasd. Ipsum magna ipsum ipsum stet ipsum
-                
-                </p>
-            </div>
+    <div>
+        <iframe class="w-full  "
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.136614377046!2d78.691648!3d10.8086961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf51de625e949%3A0x5489f3a1f6cdebd3!2sadvocate%20muruganantham!5e0!3m2!1sen!2sin!4v1707054630779!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container mx-auto flex justify-center max-w-[1300px] gap-3 py-6">
+        <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fab fa-facebook-f rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5 "
+            aria-hidden="true"></i>
+        <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fab fa-instagram rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+            aria-hidden="true"></i>
+        <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fab fa-twitter rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+            aria-hidden="true"></i>
+        <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fab fa-google rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+            aria-hidden="true"></i>
+        <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fab fa-linkedin-in rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
+            aria-hidden="true"></i>
 
-        </div>
-        <div class="flex space-x-5 mt-5">
-            <div>
-                <p class="rounded-full px-3 py-1 bg-[#567470] inline-block">3</p>
-            </div>
-            <div>
-                <p class="items-center inline-block"><span class="text-xl font-bold">Best Law Practices</span> <br> psum duo tempor elitr rebum stet magna amet kasd. Ipsum magna ipsum ipsum stet ipsum
-                
-                </p>
-            </div>
+    </div>
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector('.cursor');
 
-        </div>
+        document.addEventListener('mousemove', e => {
+            cursor.style.top = e.pageY + 'px';
+            cursor.style.left = e.pageX + 'px';
+        });
+    </script>
+      <script>
+        const galleryContainer = document.querySelector('.gallery-container');
+        const galleryControlsContainer = document.querySelector('.gallery-controls');
+        const galleryControls = [];
+        const galleryItems = document.querySelectorAll('.gallery-item');
         
-    </div>
-</div>
-
-
-<div class="mt-8">
-    <div class="w-full bg-[#567470]  pt-5 pb-8 text-xl font-serif text-white font-bold">
-        <div class="container mx-auto max-w-[1300px] flex flex-col lg:flex-row justify-between px-6">
-            <div class="text-center">
-                <p>Visit Our Office</p>
-                <p>________</p>
-                <p class="pt-4">13a Ahamed Residency,Bheema Nagar, <br>Trichy-620001 </p>
-            </div>
-            <div class="text-center">
-                <p>Get Touch With Us</p>
-                <p>________</p>
-                <p class="pt-4">+91 9444253030 <br>advmuru900@gmail.com</p>
-            </div>
-            <div class="text-center pb-5">
-                <p>Office Timing</p>
-                <p>________</p>
-                <p class="pt-4">Monday-Sunday: Open 24 Hrs</p>
-            </div>
-
-
-        </div>
-    </div>
-</div>
-
-<div>
-    <iframe class="w-full  " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.136614377046!2d78.691648!3d10.8086961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf51de625e949%3A0x5489f3a1f6cdebd3!2sadvocate%20muruganantham!5e0!3m2!1sen!2sin!4v1707054630779!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
- </div>
- <div class="container mx-auto flex justify-center max-w-[1300px] gap-3 py-6">
-    <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fa fa-facebook rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5 "
-        aria-hidden="true"></i>
-    <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fa fa-instagram rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
-        aria-hidden="true"></i>
-    <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fa fa-twitter rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
-        aria-hidden="true"></i>
-    <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fa fa-google rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
-        aria-hidden="true"></i>
-    <i class="w-[30px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center fa fa-linkedin rounded-full bg-[#0C2924] text-white cursor-pointer hover:bg-[#567470] hover:text-black p-4 px-5"
-        aria-hidden="true"></i>
-
-</div>
-
-   
+        class Carousel {
+            constructor(container, items, controls) {
+                this.carouselContainer = container;
+                this.carouselControls = controls;
+                this.carouselArray = [...items];
+                this.addEventListeners();
+            }
+        
+            updateGallery() {
+                this.carouselArray.forEach(el => {
+                    el.classList.remove('gallery-item-2', 'gallery-item-3', 'gallery-item-4');
+                });
+        
+                this.carouselArray.slice(0, 3).forEach((el, i) => {
+                    el.classList.add(`gallery-item-${i + 2}`);
+                });
+        
+                this.carouselArray.forEach((item) => {
+                    if (item.classList.contains('gallery-item-3')) {
+                        item.classList.add('active');
+                    } else {
+                        item.classList.remove('active');
+                    }
+                });
+        
+                this.updateControls();
+            }
+        
+            setCurrentState(direction) {
+                if (direction === '') {
+                    this.carouselArray.unshift(this.carouselArray.pop());
+                } else {
+                    this.carouselArray.push(this.carouselArray.shift());
+                }
+                this.updateGallery();
+            }
+        
+            setControls() {
+                this.carouselControls.forEach(control => {
+                    const button = document.createElement('button');
+                    button.className = `gallery-controls-${control}`;
+                    button.innerText = control;
+                    galleryControlsContainer.appendChild(button);
+                });
+            }
+        
+            useControls() {
+                const triggers = [...galleryControlsContainer.childNodes];
+                triggers.forEach(control => {
+                    control.addEventListener('click', e => {
+                        e.preventDefault();
+                        this.setCurrentState(control.innerText.toLowerCase());
+                    });
+                });
+            }
+        
+            addEventListeners() {
+                this.carouselArray.forEach((item, index) => {
+                    item.addEventListener('mouseover', () => {
+                        item.classList.add('hovered');
+                    });
+        
+                    item.addEventListener('mouseout', () => {
+                        item.classList.remove('hovered');
+                    });
+                });
+            }
+        }
+        
+        const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
+        exampleCarousel.setControls();
+        exampleCarousel.useControls();
+        
+        setInterval(() => {
+            exampleCarousel.setCurrentState('next');
+        }, 3000); 
+        
+      
+        </script>
+          <style>
+            .gallery {
+            width: 100%;
+            background: #e8e3d2;
+        }
+        
+        .gallery-container {
+            align-items: center;
+            display: flex;
+            height: 400px;
+            margin: 0 auto;
+            max-width: 1000px;
+            position: relative;
+        }
+        
+        .gallery-item {
+            position: relative;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        .gallery-item {
+            height: 250px;
+            opacity: 0;
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+            width: 350px;
+            z-index: 0;
+            border-radius: 15px;
+            background-size: contain;
+        }
+        .gallery-item-2,
+        .gallery-item-4 {
+            height: 300px;
+            opacity: 0.8;
+            width: 400px;
+            z-index: 1;
+            margin: 0px 20px;
+        }
+        
+        .gallery-item-2 {
+            left: 10%;
+            transform: translateX(-50%);
+        }
+        
+        .gallery-item-3 {
+            height: 400px !important;
+            opacity: 1;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            z-index: 2;
+            
+        }
+        
+        .gallery-item-4 {
+            left: 70%;
+            transform: translateX(-50%);
+        }
+        
+          </style>
 </body>
 
 </html>
