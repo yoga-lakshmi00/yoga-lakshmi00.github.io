@@ -112,7 +112,16 @@
             dots[slideIndex - 1].className += " active";
         }
     </script>
-
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "eAxUqpPV9gY-FmLkF",
+      });
+    })();
+  </script>
 </head>
 
 <body class="overflow-x-hidden cormorant-class">
@@ -240,27 +249,22 @@
                     <input class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2" type="text" name="phone" id="phone" placeholder="Your Phone Number">
                     <textarea id="subject" name="subject" class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2" placeholder="Message"></textarea>
                     
-                    <input placeholder="Date" class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" id="date">
-                    <!-- <input placeholder="Time" class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" name="time" id="time"> -->
-                    <!-- <input placeholder="Date" class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" id="date"> -->
-                    <input placeholder="Time" class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" name="time" id="time">
+                    <input placeholder="Date" class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2" type="text" name="date" id="date" onclick="this.type='date'">
+                    <input placeholder="Time" class="border-0 w-full md:w-[100%] py-3 rounded-md text-black p-2" type="text" name="time" id="time" onclick="this.type='time'">
+                    
                     <input class="text-center border rounded-md p-3 px-14 bg-[#165153] cursor-pointer hover:bg-gray-600" type="submit" value="Send">
+                    <div id="alertBox" class="text-center bg-[#e8e3d2] text-[#165153] text-xl w-[100%] p-5 border rounded-md font-bold" style="display: none;">
+                        Your Response Submitted successfully....!
+                    </div>
                 </form>
-            <!-- <form method="post">
-                <input type="button" value="Send Mail" onclick="sendEmail()" />
-            </form> -->
+        
             </div>
         </div>
+        
     </div>
 </div>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function() {
-        emailjs.init({
-          publicKey: "eAxUqpPV9gY-FmLkF",
-        });
-    })();
 
+<script>
     function sendEmail(event) {
         event.preventDefault();
         console.log("Triggered");
@@ -284,9 +288,10 @@
                 document.getElementById("subject").value = '';
                 document.getElementById("date").value = '';
                 document.getElementById("time").value = '';
+                // Set the timeout for 5 seconds (5000 ms)
                 setTimeout(() => {
                     alertBox.style.display = "none";
-                }, 3000);
+                }, 5000); // 5000 milliseconds = 5 seconds
             },
             (error) => {
                 alert("Failed to send message. Please try again later.");
